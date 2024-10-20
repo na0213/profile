@@ -7,7 +7,6 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <div className={styles.header__container}>
-        {/* 画像を追加 */}
         <Image
           src="/2.png"
           alt="Icon"
@@ -24,9 +23,6 @@ const Header = () => {
         <li>
             <Link href={"/works"}>Articles</Link>
         </li>
-        {/* <li>
-            <Link href={"/blog"}>Blog</Link>
-        </li> */}
         <li>
             <Link href={"/contact"}>Contact</Link>
         </li>
