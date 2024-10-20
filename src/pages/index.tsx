@@ -6,18 +6,6 @@ import Header from "@/components/Header";
 import About from "@/components/About";
 import Work from "@/components/Work";
 import Contact from "@/components/Contact";
-import Blog from "@/components/Blog";
-
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
 
 export default function Home() {
   return (

@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './style.module.scss';
-import Link from 'next/link';
 import Image from 'next/image';
 
 const About = () => {
@@ -17,7 +16,7 @@ const About = () => {
             />
             <div className={styles.about__prof}>Ishizaki Natsumi
               <div className={styles.about__pr}>
-                <p>WEBアプリ開発をはじめて４年目。</p>
+                <p>WEBアプリ開発をはじめて4年目。</p>
                 <p>ヘアメイク、大学病院での研究補助などを経て、化粧品・健康食品の物流や品質管理業務に従事しながらオリジナルWEBサイトを開発。</p>
                 <p>地域バイヤー、インタビューライターとしての活動も始めたばかり。</p>
                 <p>学生時代はイルカ・クジラの研究を行い、修士号を取得。</p>

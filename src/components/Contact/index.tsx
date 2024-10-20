@@ -1,8 +1,6 @@
 import React from 'react';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import styles from './style.module.scss';
-import Link from 'next/link';
-import Image from 'next/image';
 
 const Contact = () => {
   const [name, setName] = useState('');
