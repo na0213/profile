@@ -47,7 +47,7 @@ const About = () => {
             <div className={styles.about__skill}>
                 <p className={styles.about__skillTitle}>History</p>
                 <p><span>  2020</span><span>SAMURAI ENGINEER エキスパートコース</span></p>
-                <p><span>  2023</span><span>G's ACADEMY</span></p>
+                <p><span>  2023</span><span>G&#39;s ACADEMY</span></p>
                 <p><span>  2024</span><span>地域バイヤープログラム（WHERE）</span></p>
                 <p><span>  2024</span><span>インタビューライタープログラム（WHERE）</span></p>
             </div>
