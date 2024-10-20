@@ -45,11 +45,11 @@ const Work = () => {
         </Link>
         <Link href="http://www.fooch.jp/" target="_blank" rel="noopener noreferrer">
           <div className={styles.work__pic}>
-            <img
-              src="/fooch.png"
-              alt="Fooch Project"
-              width={200}
-              height={200}
+            <Image
+                src="/fooch.png"
+                alt="Icon"
+                width={200}
+                height={200}
             />
             <p className={styles.work__pr}>オリジナルWEBサービス</p>
           </div>
