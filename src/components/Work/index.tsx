@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import React from 'react';
 import { useEffect, useState } from 'react';
 import styles from './style.module.scss';
@@ -33,7 +34,7 @@ const Work = () => {
         </Link>
         <Link href="http://www.farm360.jp/" target="_blank" rel="noopener noreferrer">
           <div className={styles.work__pic}>
-            <Image
+            <img
               src="/farm360.png"
               alt="Farm 360 Project"
               width={200}
@@ -44,7 +45,7 @@ const Work = () => {
         </Link>
         <Link href="http://www.fooch.jp/" target="_blank" rel="noopener noreferrer">
           <div className={styles.work__pic}>
-            <Image
+            <img
               src="/fooch.png"
               alt="Fooch Project"
               width={200}
@@ -91,4 +92,4 @@ const Work = () => {
   );
 }
 
-export default Work;
+export default Work
