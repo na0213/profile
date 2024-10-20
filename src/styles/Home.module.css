@@ -1,165 +1,121 @@
-.page {
-  --gray-rgb: 0, 0, 0;
-  --gray-alpha-200: rgba(var(--gray-rgb), 0.08);
-  --gray-alpha-100: rgba(var(--gray-rgb), 0.05);
 
-  --button-primary-hover: #383838;
-  --button-secondary-hover: #f2f2f2;
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru&family=Zen+Kurenaido&display=swap');
 
-  display: grid;
-  grid-template-rows: 20px 1fr 20px;
-  align-items: center;
-  justify-items: center;
-  min-height: 100svh;
-  padding: 80px;
-  gap: 64px;
-  font-family: var(--font-geist-sans);
-}
-
-@media (prefers-color-scheme: dark) {
-  .page {
-    --gray-rgb: 255, 255, 255;
-    --gray-alpha-200: rgba(var(--gray-rgb), 0.145);
-    --gray-alpha-100: rgba(var(--gray-rgb), 0.06);
-
-    --button-primary-hover: #ccc;
-    --button-secondary-hover: #1a1a1a;
+/* 初期状態 */
+.fade-in-up {
+    opacity: 0; /* 初期状態で非表示 */
+    transform: translateY(50px); /* 下からの位置 */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
   }
-}
-
-.main {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-  grid-row-start: 2;
-}
-
-.main ol {
-  font-family: var(--font-geist-mono);
-  padding-left: 0;
-  margin: 0;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: -0.01em;
-  list-style-position: inside;
-}
-
-.main li:not(:last-of-type) {
-  margin-bottom: 8px;
-}
-
-.main code {
-  font-family: inherit;
-  background: var(--gray-alpha-100);
-  padding: 2px 4px;
-  border-radius: 4px;
-  font-weight: 600;
-}
-
-.ctas {
-  display: flex;
-  gap: 16px;
-}
-
-.ctas a {
-  appearance: none;
-  border-radius: 128px;
-  height: 48px;
-  padding: 0 20px;
-  border: none;
-  border: 1px solid transparent;
-  transition: background 0.2s, color 0.2s, border-color 0.2s;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 500;
-}
-
-a.primary {
-  background: var(--foreground);
-  color: var(--background);
-  gap: 8px;
-}
-
-a.secondary {
-  border-color: var(--gray-alpha-200);
-  min-width: 180px;
-}
-
-.footer {
-  grid-row-start: 3;
-  display: flex;
-  gap: 24px;
-}
-
-.footer a {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.footer img {
-  flex-shrink: 0;
-}
-
-/* Enable hover only on non-touch devices */
-@media (hover: hover) and (pointer: fine) {
-  a.primary:hover {
-    background: var(--button-primary-hover);
-    border-color: transparent;
+  
+  /* スクロールで表示される時 */
+  .fade-in-up.visible {
+    opacity: 1;
+    transform: translateY(0); /* 最終位置に戻す */
   }
-
-  a.secondary:hover {
-    background: var(--button-secondary-hover);
-    border-color: transparent;
-  }
-
-  .footer a:hover {
-    text-decoration: underline;
-    text-underline-offset: 4px;
-  }
-}
-
-@media (max-width: 600px) {
-  .page {
-    padding: 32px;
-    padding-bottom: 80px;
-  }
-
-  .main {
-    align-items: center;
-  }
-
-  .main ol {
-    text-align: center;
-  }
-
-  .ctas {
-    flex-direction: column;
-  }
-
-  .ctas a {
-    font-size: 14px;
-    height: 40px;
-    padding: 0 16px;
-  }
-
-  a.secondary {
-    min-width: auto;
-  }
-
-  .footer {
+  
+.blog {
+    gap: 10px;
+    display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-  }
+    width: 100%;
 }
+.imageContainer {
+    position: relative; /* 画像を相対配置 */
+    text-align: center;
+    }
 
-@media (prefers-color-scheme: dark) {
-  .logo {
-    filter: invert();
-  }
+    .textOverlay {
+    position: absolute; /* テキストと背景を画像上に絶対配置 */
+    top: 40%; /* 画像の縦中央に配置 */
+    left: 10%; /* 画像の左側に配置 */
+    transform: translateY(-50%); /* 上下中央に揃えるために変換 */
+    text-align: center;
+    color: #fff; /* テキストカラーを白に設定 */
+    z-index: 1; /* 画像の上に表示されるように */
+    }
+    .ellipseBackground {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 250px;
+    height: 150px;
+    background-color: rgba(240, 186, 86, 0.6); /* 背景色を黒っぽく半透明に設定 */
+    border-radius: 50% 40%; /* 楕円形にする */
+    transform: translate(-50%, -50%); /* 背景の丸を中央揃え */
+    z-index: -1; /* テキストの背面に配置 */
+    }
+
+    .textOverlay p {
+    font-size: 24px; /* テキストサイズを調整 */
+    line-height: 2.0;
+    margin: 0;
+    font-family: "Kiwi Maru", serif;
+    }
+
+@media (max-width: 860px) {
+    .textOverlay {
+        top: 30%; /* 画像の縦中央に配置 */
+        left: 15%; /* 画像の左側に配置 */
+    }
+    .textOverlay p {
+        font-size: 18px; /* タブレットや中型デバイス用にフォントサイズを縮小 */
+    }
+    .ellipseBackground {
+        width: 230px;
+        height: 130px;
+    }
+}
+@media (max-width: 680px) {
+    .textOverlay {
+        top: 25%; /* 画像の縦中央に配置 */
+        left: 15%; /* 画像の左側に配置 */
+    }
+    .textOverlay p {
+        font-size: 16px; /* タブレットや中型デバイス用にフォントサイズを縮小 */
+    }
+    .ellipseBackground {
+        width: 210px;
+        height: 110px;
+    }
+}
+@media (max-width: 540px) {
+    .textOverlay {
+        top: 25%; /* 画像の縦中央に配置 */
+        left: 15%; /* 画像の左側に配置 */
+    }
+    .textOverlay p {
+        font-size: 14px; /* タブレットや中型デバイス用にフォントサイズを縮小 */
+    }
+    .ellipseBackground {
+        width: 190px;
+        height: 90px;
+    }
+}
+@media (max-width: 480px) {
+    .textOverlay {
+        top: 23%; /* 画像の縦中央に配置 */
+        left: 15%; /* 画像の左側に配置 */
+    }
+    .textOverlay p {
+        font-size: 12px; /* タブレットや中型デバイス用にフォントサイズを縮小 */
+    }
+    .ellipseBackground {
+        width: 170px;
+        height: 70px;
+    }
+}
+@media (max-width: 415px) {
+    .textOverlay {
+        top: 20%; /* 画像の縦中央に配置 */
+        left: 15%; /* 画像の左側に配置 */
+    }
+    .textOverlay p {
+        font-size: 10px; /* タブレットや中型デバイス用にフォントサイズを縮小 */
+    }
+    .ellipseBackground {
+        width: 150px;
+        height: 50px;
+    }
 }
