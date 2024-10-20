@@ -41,9 +41,8 @@ const About = () => {
                 <p><span>  Next.js</span><span>〜１年</span></p>
                 <p><span>  MySQL</span><span>〜４年</span></p>
                 <p><span>  Git</span><span>〜４年</span></p>
-                <p><span>  AWS(S3)</span><span>〜４年</span></p>
+                <p><span>  AWS</span><span>〜４年</span></p>
             </div>
-            
             <div className={styles.about__skill}>
                 <p className={styles.about__skillTitle}>History</p>
                 <p><span>  2020</span><span>SAMURAI ENGINEER エキスパートコース</span></p>
