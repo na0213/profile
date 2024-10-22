@@ -7,6 +7,7 @@ import About from "@/components/About";
 import Work from "@/components/Work";
 import Contact from "@/components/Contact";
 import TopButton from "@/components/TopButton/TopButton";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -42,6 +43,7 @@ export default function Home() {
           <Contact />
         </div>
         <TopButton />
+        <Footer />
       </div>
     </>
   );

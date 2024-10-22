@@ -1,48 +1,21 @@
-.header {
-    background: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 10px;
-    color: #404040;
-  
-    &__container {
-      display: flex; /* 画像とタイトルを横並びに */
-      align-items: center; /* 縦方向を中央に揃える */
-    }
-    &__title {
-      font-size: 18px;
-      font-weight: bold;
-      margin-left: 10px;
-    }
-  
-    &__menu {
-      display: flex;
-  
-      li {
-        margin: 0 10px;
-        list-style-type: none;
+.footer {
+  margin: 50px;
+  display: flex;
+  flex-direction: column;  /* SNSアイコンとタイトルを縦に並べる */
+  align-items: center;
+  justify-content: center;
+  color: #404040;
 
-        a {
-          font-size: 15px;
-          text-decoration: none;
-          color: #000;
-          &:hover {
-            opacity: 0.6;
-          }
-        }
-      }
-    }
-    @media (max-width: 860px) {
-      &__title {
-        font-size: 16px;
-      }
-      &__menu {
-        li {
-          a {
-            font-size: 12px;
-          }
-        }
-      }
-    }
+  &__icons {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* アイコンの間にスペースを追加 */
+    margin-bottom: 5px; /* アイコンとタイトルの間に余白を追加 */
   }
+
+  &__title {
+    display: flex;
+    align-items: center; /* 縦方向を中央に揃える */
+    font-size: 12px;
+  }
+}
