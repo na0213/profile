@@ -1,97 +1,111 @@
 .about {
-    background: #fff;
-    margin-top: 20px;
-    padding: 15px 10px;
-    color: #404040;
-  
-    &__title {
-      text-align: center;
-      font-size: 25px;
-      letter-spacing: 0.2em;
-    }
+  background: #fff;
+  margin-top: 20px;
+  padding: 15px 10px;
+  color: #404040;
 
+  &__title {
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: 0.2em;
+  }
+
+  &__pic {
+    margin: 20px 50px;
+    display: flex; /* 画像とタイトルを横並びに */
+    align-items: flex-start;
+  }
+
+  &__prof {
+    margin-left: 20px;
+    font-size: 18px;
+  }
+  &__pr {
+    font-size: 14px;
+    line-height: 1.2;
+  }
+
+  &__like {
+    font-size: 14px;
+    background-color: rgb(241, 241, 241);
+    margin: 20px 50px;
+    padding: 10px;
+    align-items: flex-start;
+  }
+  &__hob {
+    padding-left: 30px;
+  }
+
+  &__history {
+    font-size: 14px;
+    background-color: rgb(241, 241, 241);
+    margin: 20px 50px;
+    padding: 10px;
+    align-items: flex-start;
+  }
+  .about__like p span {
+    font-weight: bold;
+  }
+
+  .about__skill {
+    width: 100%;
+  }
+  .about__skillTitle {
+    // font-size: 18px; /* お好みでサイズ調整 */
+    font-weight: bold; /* 太字にする場合 */
+    // text-decoration: underline; /* 下線を引く */
+    // text-decoration-color: rgb(221, 170, 2);
+    margin-bottom: 10px; /* Skillと下の項目に少し間隔をあける */
+  }
+  .about__skill p {
+    display: flex; /* フレックスボックスで横並び */
+    justify-content: flex-start; /* 左揃え */
+    gap: 10px; /* スキル名と年数の間に隙間を作成 */
+    // font-weight: lighter;
+  }
+  
+  .about__skill p span {
+    display: inline-block; /* インラインブロック要素にする */
+  }
+  
+  .about__skill p span:first-child {
+    min-width: 150px; /* スキル名の最小幅を設定して整列 */
+  }
+  
+  .about__skill p span:last-child {
+    flex-grow: 1; /* 必要に応じて年数を柔軟に伸縮 */
+    text-align: left; /* 年数も左揃え */
+  }
+    
+
+  @media (max-width: 860px) {
     &__pic {
-      margin: 20px 50px;
-      display: flex; /* 画像とタイトルを横並びに */
-      align-items: flex-start;
+      display: block; /* 縦並びに変更 */
+      text-align: center; /* コンテンツを中央揃え */
     }
 
     &__prof {
-      margin-left: 20px;
-      font-size: 18px;
-    }
-    &__pr {
-      font-size: 14px;
-      line-height: 1.2;
+      margin-left: 0; /* 左の余白をリセット */
+      margin-top: 10px; /* 画像との間に余白を追加 */
     }
 
+    &__pr {
+      margin-top: 5px;
+      font-size: 12px;
+    }
+
+    &__history {
+      font-size: 12px;
+      margin: 20px 30px;
+    }
 
     &__like {
-      font-size: 14px;
-      background-color: rgb(241, 241, 241);
-      margin: 20px 50px;
-      padding: 10px;
-      align-items: flex-start;
-    }
-    &__hob {
-      padding-left: 30px;
+      font-size: 12px;
+      margin: 20px 30px;
     }
 
-    .about__skill {
-      margin-top: 30px;
-      width: 100%;
-    }
-    .about__skillTitle {
-      font-size: 18px; /* お好みでサイズ調整 */
-      font-weight: bold; /* 太字にする場合 */
-      text-decoration: underline; /* 下線を引く */
-      text-decoration-color: rgb(221, 170, 2);
-      margin-bottom: 10px; /* Skillと下の項目に少し間隔をあける */
-    }
     .about__skill p {
-      display: flex; /* フレックスボックスで横並び */
-      justify-content: flex-start; /* 左揃え */
-      gap: 20px; /* スキル名と年数の間に隙間を作成 */
-      font-weight: lighter;
-    }
-    
-    .about__skill p span {
-      display: inline-block; /* インラインブロック要素にする */
-    }
-    
-    .about__skill p span:first-child {
-      min-width: 150px; /* スキル名の最小幅を設定して整列 */
-    }
-    
-    .about__skill p span:last-child {
-      flex-grow: 1; /* 必要に応じて年数を柔軟に伸縮 */
-      text-align: left; /* 年数も左揃え */
-    }
-    
-
-    @media (max-width: 860px) {
-      &__pic {
-        display: block; /* 縦並びに変更 */
-        text-align: center; /* コンテンツを中央揃え */
-      }
-  
-      &__prof {
-        margin-left: 0; /* 左の余白をリセット */
-        margin-top: 10px; /* 画像との間に余白を追加 */
-      }
-  
-      &__pr {
-        margin-top: 5px;
-        font-size: 12px;
-      }
-
-      &__like {
-        font-size: 12px;
-        margin: 20px 30px;
-      }
-
-      .about__skill p {
-        gap: 0px; /* スキル名と年数の間に隙間を作成 */
-      }
+      gap: 0px; /* スキル名と年数の間に隙間を作成 */
     }
   }
+}

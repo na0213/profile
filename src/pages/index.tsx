@@ -6,6 +6,7 @@ import Header from "@/components/Header";
 import About from "@/components/About";
 import Work from "@/components/Work";
 import Contact from "@/components/Contact";
+import TopButton from "@/components/TopButton/TopButton";
 
 export default function Home() {
   return (
@@ -17,7 +18,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div>
-        <Header />
+      <Header />
         <div className={styles.topImageWrapper}>
           <Image
             src="/green.JPG" // publicフォルダにある画像へのパス
@@ -31,9 +32,16 @@ export default function Home() {
             <p>心地よい場所へ</p><p>めぐる、つなぐ</p>
           </div>
         </div>
-        <About />
-        <Work />
-        <Contact />
+        <div id="about">
+          <About />
+        </div>
+        <div id="works">
+          <Work />
+        </div>
+        <div id="contact">
+          <Contact />
+        </div>
+        <TopButton />
       </div>
     </>
   );

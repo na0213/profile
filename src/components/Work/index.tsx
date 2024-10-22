@@ -18,7 +18,7 @@ const Work = () => {
 
   return (
     <div className={styles.work}>
-        <div className={styles.work__title}>Article</div>
+        <div className={styles.work__title}>Work</div>
 
         <div className={styles.work__container}>
         <Link href="">
@@ -29,7 +29,7 @@ const Work = () => {
                 width={200}
                 height={200}
                 />
-                <p className={styles.work__pr}>取材執筆（LOCAL LETTER）</p>
+                <p className={styles.work__pr}>取材執筆<br></br>掲載：LOCAL LETTER</p>
             </div>
         </Link>
         <Link href="http://www.farm360.jp/" target="_blank" rel="noopener noreferrer">
@@ -40,7 +40,7 @@ const Work = () => {
               width={200}
               height={200}
             />
-            <p className={styles.work__pr}>オリジナルWEBサイト</p>
+            <p className={styles.work__pr}>オリジナルWEBサイト<br></br>Farm360</p>
           </div>
         </Link>
         <Link href="http://www.fooch.jp/" target="_blank" rel="noopener noreferrer">
@@ -51,10 +51,10 @@ const Work = () => {
                 width={200}
                 height={200}
             />
-            <p className={styles.work__pr}>オリジナルWEBサービス</p>
+            <p className={styles.work__pr}>オリジナルWEBサービス<br></br>FOOCH</p>
           </div>
         </Link>
-        <Link href="">
+        {/* <Link href="">
             <div className={styles.work__pic}>
                 <Image
                 src="/fooch.png"
@@ -62,7 +62,6 @@ const Work = () => {
                 width={200}
                 height={200}
                 />
-                {/* <p className={styles.work__pr}>オリジナルWEBサイト</p> */}
             </div>
         </Link>
         <Link href="">
@@ -73,7 +72,6 @@ const Work = () => {
                 width={200}
                 height={200}
                 />
-                {/* <p className={styles.work__pr}>オリジナルWEBサイト</p> */}
             </div>
         </Link>
         <Link href="">
@@ -84,9 +82,8 @@ const Work = () => {
                 width={200}
                 height={200}
                 />
-                {/* <p className={styles.work__pr}>オリジナルWEBサイト</p> */}
             </div>
-        </Link>
+        </Link> */}
         </div>
     </div>
   );

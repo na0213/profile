@@ -18,14 +18,14 @@ const Header = () => {
       </div>
 
        <ul className={styles.header__menu}>
-       <li>
-          <Link href="#about" scroll={false}>About</Link>
+        <li>
+            <Link href={"/profile"}>About</Link>
         </li>
         <li>
-          <Link href="#works" scroll={false}>Work</Link>
+            <Link href={"/works"}>Articles</Link>
         </li>
         <li>
-          <Link href="#contact" scroll={false}>Contact</Link>
+            <Link href={"/contact"}>Contact</Link>
         </li>
        </ul>
     </header>
