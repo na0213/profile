@@ -32,9 +32,9 @@ const Work = () => {
                 <p className={styles.work__pr}>取材執筆<br></br>掲載：LOCAL LETTER</p>
             </div>
         </Link>
-        <Link href="http://www.farm360.jp/" target="_blank" rel="noopener noreferrer">
+        <Link href="/portfolio/farm">
           <div className={styles.work__pic}>
-            <img
+            <Image
               src="/farm360.png"
               alt="Farm 360 Project"
               width={200}
@@ -54,36 +54,6 @@ const Work = () => {
             <p className={styles.work__pr}>オリジナルWEBサービス<br></br>FOOCH</p>
           </div>
         </Link>
-        {/* <Link href="">
-            <div className={styles.work__pic}>
-                <Image
-                src="/fooch.png"
-                alt="Icon"
-                width={200}
-                height={200}
-                />
-            </div>
-        </Link>
-        <Link href="">
-            <div className={styles.work__pic}>
-                <Image
-                src="/fooch.png"
-                alt="Icon"
-                width={200}
-                height={200}
-                />
-            </div>
-        </Link>
-        <Link href="">
-            <div className={styles.work__pic}>
-                <Image
-                src="/fooch.png"
-                alt="Icon"
-                width={200}
-                height={200}
-                />
-            </div>
-        </Link> */}
         </div>
     </div>
   );

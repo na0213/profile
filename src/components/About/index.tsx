@@ -26,7 +26,7 @@ const About = () => {
         </div>
         
         <div className={styles.about__like}>
-          <p><span>活動</span>：インタビューライター、地域バイヤー、WEBアプリ開発・運用</p>
+          <p><span>活動</span>：WEBアプリ開発・運用、インタビューライター、地域バイヤー</p>
         </div>
         <div className={styles.about__like}>
           <p><span>好き</span>：旅、牧場、温泉、食べること、トレイルランニング、プログラミング</p>

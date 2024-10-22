@@ -54,6 +54,27 @@
     font-family: "Kiwi Maru", serif;
     }
 
+    .pagination a {
+        text-decoration: none; /* 下線を消す */
+        color: inherit; /* テキストの色を継承 */
+    }
+    .pagination__con {
+        color: #404040;
+        text-decoration: none; /* 下線を消す */
+        display: flex;          /* 子要素を横並びにする */
+        align-items: center;    /* 縦方向の中央揃え */
+        gap: 10px;              /* 要素間のスペースを設定（適宜調整） */
+    }
+
+    .farm a {
+        text-decoration: none; /* 下線を消す */
+        color: inherit; /* テキストの色を継承 */
+    }
+    .farm__pr {
+        text-align: center;
+        color: #404040;
+    }
+
 @media (max-width: 860px) {
     .textOverlay {
         top: 30%; /* 画像の縦中央に配置 */
