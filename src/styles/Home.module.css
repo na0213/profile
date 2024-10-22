@@ -64,8 +64,14 @@
         display: flex;          /* 子要素を横並びにする */
         align-items: center;    /* 縦方向の中央揃え */
         gap: 10px;              /* 要素間のスペースを設定（適宜調整） */
+        font-size: 12px;
     }
 
+    .farm__title {
+        margin: 20px;
+        font-weight: bold;
+        color: #404040;
+    }
     .farm a {
         text-decoration: none; /* 下線を消す */
         color: inherit; /* テキストの色を継承 */
@@ -74,6 +80,37 @@
         text-align: center;
         color: #404040;
     }
+    .farm__pr:hover {
+        color: #14baaa;
+        font-weight: bold;
+    }
+
+    .back {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .backButton {
+        width: 50%;
+        text-align: center;
+        background-color: #7a7c7d;
+        color: white;
+        border: none;
+        padding: 12px 30px; /* 幅を調整 */
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 10px;
+        margin-top: 20px;
+        transition: background-color 0.3s ease;
+      }
+    
+      .backButton:hover {
+        background-color: #4f5050;
+      }
+    
+      .backButton:active {
+        background-color: #4f5050;
+      }
 
 @media (max-width: 860px) {
     .textOverlay {

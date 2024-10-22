@@ -43,7 +43,7 @@ const Work = () => {
             <p className={styles.work__pr}>オリジナルWEBサイト<br></br>Farm360</p>
           </div>
         </Link>
-        <Link href="http://www.fooch.jp/" target="_blank" rel="noopener noreferrer">
+        <Link href="/portfolio/fooch">
           <div className={styles.work__pic}>
             <Image
                 src="/fooch.png"

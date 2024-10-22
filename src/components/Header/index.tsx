@@ -14,7 +14,7 @@ const Header = () => {
           width={50}
           height={50}
         />
-        <h1 className={styles.header__title}>Natomi</h1>
+        <h1 className={styles.header__title}><Link href="/#header" scroll={false}>Natomi</Link></h1>
       </div>
 
        <ul className={styles.header__menu}>
