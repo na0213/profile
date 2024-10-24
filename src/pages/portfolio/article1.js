@@ -10,23 +10,23 @@ const Farm = () => {
         <Link href="/#works">
           <p>Work</p>
         </Link>
-        <p>＞　FOOCH</p>
+        <p>＞　article</p>
       </div>
 
       <div className={styles.farm}>
-        <div className={styles.farm__title}>オリジナルWEBサービスーFOOCHー</div>
-        <Link href="http://www.fooch.jp/" target="_blank" rel="noopener noreferrer">
+        <div className={styles.farm__title}>取材執筆ー氷見 牛屋ー</div>
+        <Link href="https://localletter.jp/articles/gyuya_himi/" target="_blank" rel="noopener noreferrer">
 
-            <p className={styles.farm__pr}>初めて開発したサービス<br>
-            </br>出店されている食品の原材料を指定し除外して検索できるサイトです<br>
-            </br>▶︎WEBサイトへ</p>
+            <p className={styles.farm__pr}>LOCAL LETTER掲載<br>
+            </br>インタビューライター講座で初めて取材・執筆した記事<br>
+            </br>▶︎LOCAL LETTERの掲載記事へ</p>
 
         </Link>
       </div>
       <div className={styles.farm__imagecontainer}>
         <Image
-              src="/fooch.png" // publicフォルダにある画像へのパス
-              alt="FOOCH Image"
+              src="/gyuya.png" // publicフォルダにある画像へのパス
+              alt="Farm Image"
               width={1200} // 画像の幅
               height={400} // 画像の高さ
               layout="responsive" // 画像をレスポンシブに表示

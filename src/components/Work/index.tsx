@@ -21,10 +21,10 @@ const Work = () => {
         <div className={styles.work__title}>Work</div>
 
         <div className={styles.work__container}>
-        <Link href="">
+        <Link href="/portfolio/article1">
             <div className={styles.work__pic}>
                 <Image
-                src="/fooch.png"
+                src="/gyuya.png"
                 alt="Icon"
                 width={200}
                 height={200}

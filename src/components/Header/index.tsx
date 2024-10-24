@@ -19,13 +19,13 @@ const Header = () => {
 
        <ul className={styles.header__menu}>
        <li>
-          <Link href="#about" scroll={false}>About</Link>
+          <Link href="/#about" scroll={false}>About</Link>
         </li>
         <li>
-          <Link href="#works" scroll={false}>Work</Link>
+          <Link href="/#works" scroll={false}>Work</Link>
         </li>
         <li>
-          <Link href="#contact" scroll={false}>Contact</Link>
+          <Link href="/#contact" scroll={false}>Contact</Link>
         </li>
        </ul>
     </header>
