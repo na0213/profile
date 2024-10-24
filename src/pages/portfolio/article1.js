@@ -25,7 +25,7 @@ const Farm = () => {
       </div>
       <div className={styles.farm__imagecontainer}>
         <Image
-              src="/gyuya.png" // publicフォルダにある画像へのパス
+              src="/gyuya.jpg" // publicフォルダにある画像へのパス
               alt="Image"
               width={1200} // 画像の幅
               height={400} // 画像の高さ

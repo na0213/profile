@@ -24,7 +24,7 @@ const Work = () => {
         <Link href="/portfolio/article1">
             <div className={styles.work__pic}>
                 <Image
-                src="/farm360.png"
+                src="/gyuya.jpg"
                 alt="Icon"
                 width={200}
                 height={200}
