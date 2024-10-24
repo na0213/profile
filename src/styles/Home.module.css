@@ -21,6 +21,9 @@
     flex-wrap: wrap;
     width: 100%;
 }
+.topImageWrapper {
+    margin: 0 20px;
+}
 .imageContainer {
     position: relative; /* 画像を相対配置 */
     text-align: center;
@@ -157,7 +160,7 @@
         font-size: 12px;
     }
 }
-@media (max-width: 540px) {
+@media (max-width: 555px) {
     .textOverlay {
         top: 25%; /* 画像の縦中央に配置 */
         left: 15%; /* 画像の左側に配置 */
@@ -166,7 +169,7 @@
         font-size: 14px; /* タブレットや中型デバイス用にフォントサイズを縮小 */
     }
     .ellipseBackground {
-        width: 190px;
+        width: 160px;
         height: 90px;
     }
 }
@@ -179,7 +182,7 @@
         font-size: 12px; /* タブレットや中型デバイス用にフォントサイズを縮小 */
     }
     .ellipseBackground {
-        width: 170px;
+        width: 140px;
         height: 70px;
     }
 }
@@ -192,7 +195,7 @@
         font-size: 10px; /* タブレットや中型デバイス用にフォントサイズを縮小 */
     }
     .ellipseBackground {
-        width: 150px;
+        width: 110px;
         height: 50px;
     }
 }
