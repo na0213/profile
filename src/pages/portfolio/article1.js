@@ -26,7 +26,7 @@ const Farm = () => {
       <div className={styles.farm__imagecontainer}>
         <Image
               src="/gyuya.png" // publicフォルダにある画像へのパス
-              alt="Farm Image"
+              alt="Image"
               width={1200} // 画像の幅
               height={400} // 画像の高さ
               layout="responsive" // 画像をレスポンシブに表示
