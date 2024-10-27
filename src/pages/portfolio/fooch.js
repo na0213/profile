@@ -15,23 +15,23 @@ const Farm = () => {
 
       <div className={styles.farm}>
         <div className={styles.farm__title}>オリジナルWEBサービスーFOOCHー</div>
-        <Link href="http://www.fooch.jp/" target="_blank" rel="noopener noreferrer">
+        <Link href="https://www.fooch.jp/" target="_blank" rel="noopener noreferrer">
 
-            <p className={styles.farm__pr}>初めて開発したサービス<br>
-            </br>出店されている食品の原材料を指定し除外して検索できるサイトです<br>
+            <p className={styles.farm__pr}>初めて開発したサービス。<br>
+            </br>出店されている食品の原材料を指定し除外して検索できるサービスを開発。<br>
+            </br>Laravel・PHPを使用しています。<br>
             </br>▶︎WEBサイトへ</p>
-
-        </Link>
+            <div className={styles.farm__imagecontainer}>
+            <Image
+                  src="/foochpic.png" // publicフォルダにある画像へのパス
+                  alt="FOOCH Image"
+                  width={1200} // 画像の幅
+                  height={400} // 画像の高さ
+                  layout="responsive" // 画像をレスポンシブに表示
+                  className={styles.farm__image}
+            />
       </div>
-      <div className={styles.farm__imagecontainer}>
-        <Image
-              src="/fooch.png" // publicフォルダにある画像へのパス
-              alt="FOOCH Image"
-              width={1200} // 画像の幅
-              height={400} // 画像の高さ
-              layout="responsive" // 画像をレスポンシブに表示
-              className={styles.farm__image}
-        />
+        </Link>
       </div>
       {/* 戻る */}
       <div className={styles.back}>

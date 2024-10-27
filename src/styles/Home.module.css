@@ -70,9 +70,12 @@
         font-size: 12px;
     }
 
+    .farm {
+        max-width: 600px; /* 全体の最大幅を設定 */
+        margin: 0 auto; /* 左右の余白を自動にして中央に配置 */
+    }
     .farm__title {
-        margin: 20px;
-        /* font-weight: bold; */
+        margin-top: 30px;
         color: #404040;
     }
     .farm a {
@@ -81,7 +84,7 @@
         font-size: 14px;
     }
     .farm__pr {
-        text-align: center;
+        text-align: start;
         color: #404040;
     }
     .farm__pr:hover {
@@ -92,15 +95,20 @@
         justify-content: center; /* 水平方向に中央揃え */
         align-items: center; /* 垂直方向に中央揃え（必要に応じて） */
         margin-bottom: 20px; /* 上に少し余白を追加 */
+        overflow: hidden; /* ホバーで画像がはみ出さないようにする */
     }
     .farm__image {
         border-radius: 10px; /* 例えば画像に角丸を適用 */
         box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* 影を追加 */
-        margin-top: 20px; /* 画像の上に余白を追加 */
-        max-width: 70%; /* 画像の最大幅を設定してレスポンシブ対応 */
+        margin: 20px 0; /* 画像の上に余白を追加 */
+        max-width: 100%; /* 画像の最大幅を設定してレスポンシブ対応 */
         height: auto; /* 高さを自動にして縦横比を保持 */
+        transition: transform 0.3s ease; /* ズーム効果のスムーズなトランジション */
     }
-
+    .farm__image:hover {
+        transform: scale(1.05); /* 画像を少し大きくする */
+    }
+    
     .back {
         display: flex;
         align-items: center;
@@ -142,6 +150,10 @@
     }
 }
 @media (max-width: 680px) {
+    .farm {
+        max-width: 500px; /* 全体の最大幅を設定 */
+        margin: 0 auto; /* 左右の余白を自動にして中央に配置 */
+    }
     .textOverlay {
         top: 25%; /* 画像の縦中央に配置 */
         left: 15%; /* 画像の左側に配置 */
@@ -174,6 +186,10 @@
     }
 }
 @media (max-width: 480px) {
+    .farm {
+        max-width: 350px; /* 全体の最大幅を設定 */
+        margin: 0 auto; /* 左右の余白を自動にして中央に配置 */
+    }
     .textOverlay {
         top: 23%; /* 画像の縦中央に配置 */
         left: 15%; /* 画像の左側に配置 */

@@ -38,6 +38,10 @@
       }
     }
     @media (max-width: 860px) {
+      &__container img {
+        width: 40px; /* スマホサイズで画像を小さく */
+        height: 40px;
+      }
       &__title {
         font-size: 16px;
       }
