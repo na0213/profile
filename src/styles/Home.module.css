@@ -70,6 +70,56 @@
         font-size: 12px;
     }
 
+    /* モーダルの背景 */
+    .modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.5); /* 半透明の黒 */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+    }
+    
+    /* モーダルのコンテンツ */
+    .modalContent {
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        width: 300px;
+        text-align: center;
+    }
+    
+    /* モーダルのリンクのスタイル */
+    .farm__link {
+        cursor: pointer;
+    }
+  /* モーダルの閉じるボタン */
+    .modalContent button {
+    background-color: #ffcccb; /* 柔らかいピンク */
+    color: #fff;
+    border: none;
+    border-radius: 20px; /* 丸みを持たせる */
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* ボタンに影を追加 */
+    }
+
+    /* ホバー時のエフェクト */
+    .modalContent button:hover {
+    background-color: #ff9aa2; /* 少し濃いピンクに変更 */
+    transform: scale(1.05); /* 少し大きく */
+    }
+
+    .modalContent button:active {
+    transform: scale(0.95); /* 押したとき少し小さく */
+    }
+
     .farm {
         max-width: 600px; /* 全体の最大幅を設定 */
         margin: 0 auto; /* 左右の余白を自動にして中央に配置 */
@@ -108,7 +158,7 @@
     .farm__image:hover {
         transform: scale(1.05); /* 画像を少し大きくする */
     }
-    
+
     .back {
         display: flex;
         align-items: center;
