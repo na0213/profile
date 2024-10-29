@@ -1,9 +1,19 @@
-import React from 'react';
+import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from "@/styles/Home.module.css";
 
 const Farm = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleModalOpen = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleModalClose = () => {
+    setIsModalOpen(false);
+  };
+
   return (
     <div className={styles.pagination}>
       <div className={styles.pagination__con}>
@@ -17,9 +27,9 @@ const Farm = () => {
         <div className={styles.farm__title}>オリジナルWEBサイトーFarm360ー</div>
         <div onClick={handleModalOpen} className={styles.farm__link}>
           <p className={styles.farm__pr}>
-            初めて開発したサービス。<br />
-            出店されている食品の原材料を指定し除外して検索できるサービスを開発。<br />
-            Laravel・PHPを使用しています。<br />
+            巡った牧場をご紹介できるWEBサイトを制作中。<br />
+            訪問記録や撮影画像などを掲載し牧場の魅力を伝えられるサイトにしていきます。<br />
+            <br />
             ▶︎WEBサイトへ
           </p>
           
