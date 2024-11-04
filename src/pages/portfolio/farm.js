@@ -4,15 +4,15 @@ import Image from 'next/image';
 import styles from "@/styles/Home.module.css";
 
 const Farm = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  // const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const handleModalOpen = () => {
-    setIsModalOpen(true);
-  };
+  // const handleModalOpen = () => {
+  //   setIsModalOpen(true);
+  // };
 
-  const handleModalClose = () => {
-    setIsModalOpen(false);
-  };
+  // const handleModalClose = () => {
+  //   setIsModalOpen(false);
+  // };
 
   return (
     <div className={styles.pagination}>
