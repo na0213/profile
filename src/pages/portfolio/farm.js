@@ -25,7 +25,7 @@ const Farm = () => {
 
       <div className={styles.farm}>
         <div className={styles.farm__title}>オリジナルWEBサイトーFarm360ー</div>
-        <div onClick={handleModalOpen} className={styles.farm__link}>
+        {/* <div onClick={handleModalOpen} className={styles.farm__link}>
           <p className={styles.farm__pr}>
             巡った牧場をご紹介できるWEBサイトを制作中。<br />
             訪問記録や撮影画像などを掲載し牧場の魅力を伝えられるサイトにしていきます。<br />
@@ -43,18 +43,18 @@ const Farm = () => {
               className={styles.farm__image}
             />
           </div>
-        </div>
+        </div> */}
         {/* モーダルウィンドウ */}
-        {isModalOpen && (
+        {/* {isModalOpen && (
           <div className={styles.modal}>
             <div className={styles.modalContent}>
               <p>11月中に公開予定です🐧</p>
               <button onClick={handleModalClose}>閉じる</button>
             </div>
           </div>
-        )}
+        )} */}
 
-        {/* <Link href="http://www.farm360.jp/" target="_blank" rel="noopener noreferrer">
+        <Link href="http://www.farm360.jp/" target="_blank" rel="noopener noreferrer">
           <p className={styles.farm__pr}>巡った牧場をご紹介できるWEBサイトを制作。<br>
           </br>インタビュー記事や撮影画像などを掲載し牧場の魅力を伝えていきます。<br>
           </br>▶︎WEBサイトへ</p>
@@ -68,7 +68,7 @@ const Farm = () => {
               className={styles.farm__image}
             />
           </div>
-        </Link> */}
+        </Link>
       </div>
       {/* 戻る */}
       <div className={styles.back}>
