@@ -1,0 +1,48 @@
+.work {
+  background: #fff;
+  padding: 15px 10px;
+  color: #404040;
+
+  &__title {
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: 0.2em;
+    margin: 20px 0 30px;
+  }
+
+  &__container {
+    display: flex; /* フレックスボックスで横並び */
+    flex-wrap: wrap; /* 画面幅に応じて折り返し */
+    gap: 40px; /* 各アイテム間に余白 */
+    justify-content: center; /* セット全体を中央揃え */
+  }
+  &__container a {
+    text-decoration: none; /* 下線を消す */
+    color: inherit; /* テキストの色を継承 */
+  }
+
+  &__pic {
+    text-align: center; /* 画像と説明を中央揃え */
+    flex-basis: calc(33.333% - 20px); /* 1行に3つのセットを表示 */
+    box-sizing: border-box; /* パディングやマージンを含めた幅調整 */
+  }
+
+  &__pr {
+    font-size: 12px;
+    text-align: center;
+  }
+  /* アニメーション前の状態 */
+
+  @media (max-width: 768px) {
+    &__pic {
+      flex-basis: calc(50% - 20px); /* 画面が狭い場合、2列に */
+    }
+  }
+
+  @media (max-width: 480px) {
+    &__pic {
+      flex-basis: 100%; /* スマートフォン画面では1列に */
+    }
+  }
+
+}

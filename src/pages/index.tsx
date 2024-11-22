@@ -6,6 +6,7 @@ import About from "@/components/About";
 import Work from "@/components/Work";
 import Contact from "@/components/Contact";
 import TopButton from "@/components/TopButton/TopButton";
+import Activity from "@/components/Activity";
 
 export default function Home() {
   return (
@@ -35,6 +36,9 @@ export default function Home() {
         </div>
         <div id="works">
           <Work />
+        </div>
+        <div id="works">
+          <Activity />
         </div>
         <div id="contact">
           <Contact />
