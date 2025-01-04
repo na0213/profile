@@ -21,6 +21,17 @@ const Work = () => {
         <div className={styles.work__title}>Work</div>
 
         <div className={styles.work__container}>
+        <Link href="/portfolio/article2">
+            <div className={styles.work__pic}>
+                <Image
+                src="/community.jpg"
+                alt="Icon"
+                width={200}
+                height={200}
+                />
+                <p className={styles.work__pr}>取材執筆<br></br>コミュニティマネージャー養成講座卒業生の鼎談記事</p>
+            </div>
+        </Link>
         <Link href="/portfolio/article1">
             <div className={styles.work__pic}>
                 <Image
@@ -29,7 +40,7 @@ const Work = () => {
                 width={200}
                 height={200}
                 />
-                <p className={styles.work__pr}>取材執筆<br></br>掲載：LOCAL LETTER</p>
+                <p className={styles.work__pr}>取材執筆<br></br>氷見牛屋代表の記事</p>
             </div>
         </Link>
         <Link href="/portfolio/farm">

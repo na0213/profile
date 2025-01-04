@@ -123,10 +123,10 @@
     .farm {
         max-width: 600px; /* 全体の最大幅を設定 */
         margin: 0 auto; /* 左右の余白を自動にして中央に配置 */
+        color: #404040;
     }
     .farm__title {
         margin-top: 30px;
-        color: #404040;
     }
     .farm a {
         text-decoration: none; /* 下線を消す */
@@ -186,6 +186,48 @@
         background-color: #4f5050;
       }
 
+/* evene.jsの装飾 */
+.farm__highlight {
+    background-color: #f9f9f9; /* 薄いグレーの背景 */
+    border: 1px solid #ddd; /* グレーの境界線 */
+    border-radius: 8px; /* 角を少し丸く */
+    padding: 10px; /* 内側の余白 */
+    margin: 25px 0; /* 上下の余白 */
+  }
+  .farm__link {
+    text-decoration: none; /* 初期状態では下線なし */
+  }
+  
+  .farm__link:hover {
+    font-weight: bold; /* 太字にしたい場合 */
+    color: #0070f3; /* ホバー時の文字色を青に */
+    text-decoration: underline; /* ホバー時に下線を表示 */
+    cursor: pointer; /* ポインターを表示 */
+    transition: color 0.3s ease; /* 色の変化をスムーズに */
+  }
+  .farm__container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* 各アイテム間のスペース */
+  }
+  .farm__item {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* 画像と説明の間のスペース */
+  }
+  .farm__itemLeft {
+    flex-direction: row; /* 画像が左、説明が右 */
+  }
+  .farm__itemRight {
+    flex-direction: row-reverse; /* 画像が右、説明が左 */
+  }
+  .farm__pr {
+    font-size: 16px; /* 説明文のフォントサイズ */
+    line-height: 1.5; /* 行間を調整 */
+  }
+  .farm__bold {
+    font-weight: bold;
+  }
 @media (max-width: 860px) {
     .textOverlay {
         top: 30%; /* 画像の縦中央に配置 */

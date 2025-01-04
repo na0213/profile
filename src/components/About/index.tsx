@@ -54,10 +54,10 @@ const About = () => {
           <div className={styles.about__skill}>
               <p className={styles.about__skillTitle}>History</p>
               <p><span>  2024年</span><span>コミュニティマネージャー／地域バイヤープログラム第4期（WHERE）</span></p>
-              <p><span>  2024年</span><span>地域バイヤープログラム第3期（WHERE）</span></p>
-              <p><span>  2024年</span><span>インタビューライタープログラム第5期（WHERE）</span></p>
-              <p><span>  2023年</span><span>G&#39;s ACADEMY DEVコース</span></p>
-              <p><span>  2020年</span><span>SAMURAI ENGINEER エキスパートコース</span></p>
+              <p><span>  2024年</span><span>地域バイヤープログラム第3期（WHERE）受講</span></p>
+              <p><span>  2024年</span><span>インタビューライタープログラム第5期（WHERE）受講</span></p>
+              <p><span>  2023年</span><span>G&#39;s ACADEMY DEVコース受講</span></p>
+              <p><span>  2020年</span><span>SAMURAI ENGINEER エキスパートコース受講</span></p>
           </div>
         </div>
       </div>
