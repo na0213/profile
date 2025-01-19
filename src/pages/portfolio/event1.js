@@ -97,6 +97,17 @@ const Farm = () => {
               牧場さんからいただいたリーフレット<br />POPは作成しました
               </p>
           </div>
+          <div className={`${styles.farm__item} ${styles.farm__itemLeft}`}>
+            <Image
+              src="/report.PNG"
+              alt="Farm 360 Project"
+              width={200}
+              height={200}
+            />
+            <p>
+              お客様からそれぞれ牧場さんへのメッセージをいただき、イベント報告として冊子を作り、お届けしました
+            </p>
+          </div>
         </div>
       </div>
 

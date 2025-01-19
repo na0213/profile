@@ -21,7 +21,8 @@
     font-size: 18px;
   }
   &__pr {
-    font-size: 14px;
+    margin: 20px 50px;
+    padding: 10px;
     line-height: 1.2;
   }
 
@@ -51,30 +52,51 @@
     width: 100%;
   }
   .about__skillTitle {
-    // font-size: 18px; /* お好みでサイズ調整 */
     font-weight: bold; /* 太字にする場合 */
-    // text-decoration: underline; /* 下線を引く */
-    // text-decoration-color: rgb(221, 170, 2);
     margin-bottom: 10px; /* Skillと下の項目に少し間隔をあける */
   }
-  .about__skill p {
-    display: flex; /* フレックスボックスで横並び */
-    justify-content: flex-start; /* 左揃え */
-    gap: 10px; /* スキル名と年数の間に隙間を作成 */
-    // font-weight: lighter;
-  }
+
+  .skillTable {
+    width: 100%; /* テーブルを親要素の幅に合わせる */
+    border-collapse: collapse; /* セル間の余白を除去 */
+    margin-top: 10px;
   
-  .about__skill p span {
-    display: inline-block; /* インラインブロック要素にする */
-  }
+    td {
+      padding: 10px; /* セル内の余白を設定 */
+      vertical-align: top; /* テキストを上揃え */
+    }
   
-  .about__skill p span:first-child {
-    min-width: 150px; /* スキル名の最小幅を設定して整列 */
-  }
+    td:first-child {
+      width: 150px; /* スキル名の幅を固定 */
+      font-weight: bold; /* スキル名を強調 */
+      text-align: left; /* 左揃え */
+    }
   
-  .about__skill p span:last-child {
-    flex-grow: 1; /* 必要に応じて年数を柔軟に伸縮 */
-    text-align: left; /* 年数も左揃え */
+    td:last-child {
+      text-align: left; /* 年数部分も左揃え */
+      word-break: break-word; /* 折り返しを許可 */
+    }
+  }
+  .historyTable {
+    width: 100%; /* テーブルを親要素の幅に合わせる */
+    border-collapse: collapse; /* テーブルの余白を除去 */
+    margin-top: 10px;
+  
+    td {
+      padding: 10px; /* セル内の余白を設定 */
+      vertical-align: top; /* テキストを上揃え */
+    }
+  
+    td:first-child {
+      width: 80px; /* 年号部分の幅を固定 */
+      font-weight: bold; /* 年号を強調 */
+      text-align: left; /* 左揃え */
+    }
+  
+    td:last-child {
+      text-align: left; /* 内容部分も左揃え */
+      word-break: break-word; /* 内容が長い場合に折り返し */
+    }
   }
     
 
@@ -106,6 +128,14 @@
 
     .about__skill p {
       gap: 0px; /* スキル名と年数の間に隙間を作成 */
+    }
+
+    td {
+      padding: 5px; /* スマホサイズで余白を調整 */
+    }
+
+    td:first-child {
+      width: 70px; /* 年号部分を少し狭く */
     }
   }
 }

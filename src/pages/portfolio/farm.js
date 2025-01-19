@@ -21,11 +21,11 @@ const Farm = () => {
         <Link href="/#works">
           <p>Work</p>
         </Link>
-        <p>＞　Farm360</p>
+        <p>＞　牧場へ行こう</p>
       </div>
 
       <div className={styles.farm}>
-        <div className={styles.farm__title}>オリジナルWEBサイトーFarm360ー</div>
+        <div className={styles.farm__title}>オリジナルWEBサイトー牧場へ行こうー</div>
         {/* <div onClick={handleModalOpen} className={styles.farm__link}>
           <p className={styles.farm__pr}>
             巡った牧場をご紹介できるWEBサイトを制作中。<br />
@@ -61,7 +61,7 @@ const Farm = () => {
           </br>▶︎WEBサイトへ</p>
           <div className={styles.farm__imagecontainer}>
             <Image
-              src="/farmpic.png" // publicフォルダにある画像へのパス
+              src="/farmgo.png" // publicフォルダにある画像へのパス
               alt="Farm Image"
               width={1200} // 画像の幅
               height={400} // 画像の高さ

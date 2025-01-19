@@ -28,7 +28,7 @@ export default function Home() {
           />
           <div className={styles.textOverlay}>
             <div className={styles.ellipseBackground}></div>
-            <p>心地よい場所へ</p><p>めぐる、つなぐ</p>
+            <p>おいしいには</p><p>物語がある</p>
           </div>
         </div>
         <div id="about">

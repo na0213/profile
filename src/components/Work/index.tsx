@@ -51,7 +51,7 @@ const Work = () => {
               width={200}
               height={200}
             />
-            <p className={styles.work__pr}>オリジナルWEBサイト<br></br>Farm360</p>
+            <p className={styles.work__pr}>オリジナルWEBサイト<br></br>「牧場へ行こう」</p>
           </div>
         </Link>
         <Link href="/portfolio/fooch">
