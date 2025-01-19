@@ -55,7 +55,7 @@ const Farm = () => {
           </div>
         )} */}
 
-        <Link href="http://www.farm360.jp/" target="_blank" rel="noopener noreferrer">
+        <Link href="https://www.farm360.jp/" target="_blank" rel="noopener noreferrer">
           <p className={styles.farm__pr}>巡った牧場をご紹介できるWEBサイトを制作。<br>
           </br>インタビュー記事や撮影画像などを掲載し牧場の魅力を伝えていきます。<br>
           </br>▶︎WEBサイトへ</p>
