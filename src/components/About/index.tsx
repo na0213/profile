@@ -95,7 +95,7 @@ const About = () => {
             </tr>
             <tr>
               <td>2023年</td>
-              <td>G's ACADEMY DEVコース受講</td>
+              <td>G&apos;s ACADEMY DEVコース受講</td>
             </tr>
             <tr>
               <td>2020年</td>
