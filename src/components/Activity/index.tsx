@@ -18,7 +18,7 @@ const Activity = () => {
 
   return (
     <div className={styles.work}>
-        <div className={styles.work__title}>Activity</div>
+        <div className={styles.work__title}>Event</div>
 
         <div className={styles.work__container}>
         <Link href="/portfolio/event1">

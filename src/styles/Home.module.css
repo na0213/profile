@@ -51,7 +51,7 @@
     }
 
     .textOverlay p {
-    font-size: 24px; /* テキストサイズを調整 */
+    font-size: 20px; /* テキストサイズを調整 */
     line-height: 2.0;
     margin: 0;
     font-family: "Kiwi Maru", serif;
@@ -122,11 +122,14 @@
 
     .farm {
         max-width: 600px; /* 全体の最大幅を設定 */
-        margin: 0 auto; /* 左右の余白を自動にして中央に配置 */
+        margin: 30px auto; /* 左右の余白を自動にして中央に配置 */
         color: #404040;
     }
     .farm__title {
         margin-top: 30px;
+    }
+    .farm__disc {
+        font-size: 14px;
     }
     .farm a {
         text-decoration: none; /* 下線を消す */

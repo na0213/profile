@@ -20,7 +20,7 @@ export default function Home() {
       <div>
         <div className={styles.topImageWrapper}>
           <Image
-            src="/green.JPG" // publicフォルダにある画像へのパス
+            src="/sky.JPG" // publicフォルダにある画像へのパス
             alt="Top Image"
             width={1200} // 画像の幅
             height={400} // 画像の高さ
@@ -28,7 +28,7 @@ export default function Home() {
           />
           <div className={styles.textOverlay}>
             <div className={styles.ellipseBackground}></div>
-            <p>おいしい物語が</p><p>つながる場所</p>
+            <p>スキをめぐる</p><p>スキをつなげる</p>
           </div>
         </div>
         <div id="about">

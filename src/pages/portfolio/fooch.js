@@ -18,7 +18,7 @@ const Farm = () => {
     <div className={styles.pagination}>
       <div className={styles.pagination__con}>
         <Link href="/#works">
-          <p>Work</p>
+          <p>Activity</p>
         </Link>
         <p>＞　FOOCH</p>
       </div>

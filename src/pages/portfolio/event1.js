@@ -8,7 +8,7 @@ const Farm = () => {
     <div className={styles.pagination}>
       <div className={styles.pagination__con}>
         <Link href="/#works">
-          <p>Activity</p>
+          <p>Event</p>
         </Link>
         <p>＞　event</p>
       </div>
@@ -30,28 +30,43 @@ const Farm = () => {
             />
           </div>
           <div>
+            <p>今回初めて開催したイベント</p>
+            <div className={styles.farm__highlight}>
+              <p>【目的は２つ】<br>
+              </br>
+              ・牧場や牛の種類ごとの牛乳の味の違いを知ってもらい、美味しさをお届けすること<br>
+              </br>
+              ・牛乳の味の違いを体験することで酪農への興味を喚起し、牧場へ足を運んでいただく機会に繋げること
+              </p>
+            </div>
             <p>イベントでは、牛乳飲み比べセットを販売し、約30組ほどのお客様にご参加いただきました。<br></br><br />
             「味の違いがこんなにあるとは！」と驚かれる方や、「お気に入りの牛乳が見つかった」と喜んでいただける方など、多様な反応をいただきました。</p><br></br>
             <p>【ご協力いただいた牧場さま】</p>
-            <Link href="https://www.hiroo-suzukifarm.com/" target="_blank" rel="noopener noreferrer">
-            <p className={styles.farm__bold}>◇鈴木牧場（北海道）</p>
-              <p>オーガニック牧場でのびのび放牧で育つ牛さんのA2ミルク</p>
-            </Link>
-            <Link href="https://www.sudo-farm.com/" target="_blank" rel="noopener noreferrer">
-            <p className={styles.farm__bold}>◇須藤牧場（千葉県）</p>
-              <p>放牧や広々とした牛舎でのんびり育つジャージー牛さんの甘いミルク</p>
-            </Link>
-            <Link href="https://miyazaki.matsuuramilk.com/" target="_blank" rel="noopener noreferrer">
-            <p className={styles.farm__bold}>◇松浦牧場（宮崎県）</p>
-              <p>牧草作りから大切に育てられている生乳品質奨励会で3年連続受賞のミルク</p>
-            </Link>
+            <div className={styles.farm__highlight}>
+              <Link href="https://www.hiroo-suzukifarm.com/" target="_blank" rel="noopener noreferrer">
+              <p className={styles.farm__link}>▶︎鈴木牧場（北海道）</p>
+              </Link>
+                <p className={styles.farm__disc}>オーガニック牧場でのびのびと放牧し、牧草だけで育つ牛さんのグラスフェッドA2ミルク</p>
+            </div>
+            <div className={styles.farm__highlight}>
+              <Link href="https://www.sudo-farm.com/" target="_blank" rel="noopener noreferrer">
+              <p className={styles.farm__link}>▶︎須藤牧場（千葉県）</p>
+              </Link>
+                <p className={styles.farm__disc}>放牧や広々とした牛舎でのんびり育つ、国内飼育頭数0.8%と希少なジャージー牛の甘いミルク</p>
+            </div>
+            <div className={styles.farm__highlight}>
+              <Link href="https://miyazaki.matsuuramilk.com/" target="_blank" rel="noopener noreferrer">
+              <p className={styles.farm__link}>▶︎松浦牧場（宮崎県）</p>
+              </Link>
+              <p className={styles.farm__disc}>牧草からこだわり、大切に育てられている生乳品質奨励会で3年連続受賞のミルク</p>
+            </div>
           </div>
-          <div className={styles.farm__highlight}>
+          {/* <div className={styles.farm__highlight}> */}
             <p>イベントの開催概要については、LOCAL LETTERにて記事として掲載いただきました</p>
             <Link href="https://localletter.jp/articles/event_localfood/" target="_blank" rel="noopener noreferrer">
               <p className={styles.farm__link}>▶︎記事はこちらから</p>
             </Link>
-          </div>
+          {/* </div> */}
         <div className={styles.farm__container}>
           <div className={`${styles.farm__item} ${styles.farm__itemLeft}`}>
             <Image
@@ -105,7 +120,7 @@ const Farm = () => {
               height={200}
             />
             <p>
-              お客様からそれぞれ牧場さんへのメッセージをいただき、イベント報告として冊子を作り、お届けしました
+              お客様からそれぞれ牧場へのメッセージをいただき、イベント報告として冊子を作り、生産者さんへお届けしました
             </p>
           </div>
         </div>

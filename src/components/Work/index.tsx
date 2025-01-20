@@ -18,7 +18,7 @@ const Work = () => {
 
   return (
     <div className={styles.work}>
-        <div className={styles.work__title}>Work</div>
+        <div className={styles.work__title}>Activity</div>
 
         <div className={styles.work__container}>
         <Link href="/portfolio/article2">
@@ -40,7 +40,7 @@ const Work = () => {
                 width={200}
                 height={200}
                 />
-                <p className={styles.work__pr}>取材執筆<br></br>氷見牛屋代表の記事</p>
+                <p className={styles.work__pr}>取材執筆<br></br>「氷見 牛屋」代表の取材記事</p>
             </div>
         </Link>
         <Link href="/portfolio/farm">

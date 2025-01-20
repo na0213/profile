@@ -28,12 +28,6 @@ const About = () => {
       <div className={styles.about__like}>
         <p><span>活動</span>：インタビューライター、地域バイヤー、個人開発</p>
       </div>
-      <div className={styles.about__like}>
-        <p><span>好き</span>：牧場、旅、温泉、釣り、食べること、トレイルランニング、プログラミング</p>
-      </div>
-      <div className={styles.about__like}>
-        <p><span>溺愛</span>：フェレット</p>
-      </div>
       <div className={styles.about__history}>
         <div className={styles.about__skill}>
           <p className={styles.about__skillTitle}>Skill</p>
@@ -83,15 +77,15 @@ const About = () => {
           <tbody>
             <tr>
               <td>2024年</td>
-              <td>地域バイヤープログラム第4期（WHERE）にて、コミュニティマネージャーとして活動</td>
+              <td>地域バイヤープログラム第4期（（株）WHERE）にて、コミュニティマネージャーとして活動</td>
             </tr>
             <tr>
               <td>2024年</td>
-              <td>地域バイヤープログラム第3期（WHERE）受講</td>
+              <td>地域バイヤープログラム第3期（（株）WHERE）受講</td>
             </tr>
             <tr>
               <td>2024年</td>
-              <td>インタビューライタープログラム第5期（WHERE）受講</td>
+              <td>インタビューライタープログラム第5期（（株）WHERE）受講</td>
             </tr>
             <tr>
               <td>2023年</td>
@@ -105,6 +99,9 @@ const About = () => {
         </table>
       </div>
     </div>
+    <div className={styles.about__like}>
+        <p><span>好き</span>：牧場、旅、温泉、釣り、食べること、トレイルランニング、プログラミング、フェレット</p>
+      </div>
     </div>
   );
 }
