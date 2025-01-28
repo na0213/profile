@@ -24,15 +24,39 @@ const Farm = () => {
       </div>
 
       <div className={styles.farm}>
-        <div className={styles.farm__title}>オリジナルWEBサービスーFOOCHー</div>
+      <div className={styles.farm__title}>オリジナルWEBサービス</div>
+        <div className={styles.about__history}>
+        <div className={styles.about__skill}>
+          <table className={styles.skillTable}>
+            <tbody>
+              <tr>
+                <td>タイトル</td>
+                <td>FOOCH</td>
+              </tr>
+              <tr>
+                <td>目的</td>
+                <td>
+                  <div>目的の食品が探しにくく困っている人（食品アレルギーなど）</div>
+                  <div>素材にこだわった食品を探したい人</div>
+                </td>
+              </tr>
+              <tr>
+                <td>ターゲット</td>
+                <td>食にこだわりのある人・食物アレルギーのある人</td>
+              </tr>
+              <tr>
+                <td>意識したこと</td>
+                <td>
+                  <div>検索しやすいこと</div>
+                  <div>わかりやすいUI</div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
         <div onClick={handleModalOpen} className={styles.farm__link}>
-          <p className={styles.farm__pr}>
-            初めて開発したサービス。<br />
-            出店されている食品の原材料を指定し除外して検索できるサービスを開発。<br />
-            Laravel・PHPを使用しています。<br />
-            ▶︎WEBサイトへ
-          </p>
-          
+        
           <div className={styles.farm__imagecontainer}>
             <Image
               src="/foochpic.png" // publicフォルダにある画像へのパス
