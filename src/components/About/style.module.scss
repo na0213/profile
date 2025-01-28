@@ -23,9 +23,57 @@
   &__pr {
     margin: 20px 50px;
     padding: 10px;
-    line-height: 1.2;
+    line-height: 2.0;
   }
 
+  .about__career {
+    background: #fff;
+    margin-top: 20px;
+    padding: 15px 10px;
+    color: #404040;
+  }
+  
+  .about__section {
+    margin-bottom: 20px;
+  }
+  
+  .about__sectionTitle {
+    font-size: 20px;
+    letter-spacing: 0.2em;
+    margin-bottom: 10px;
+    text-align: left;
+    padding-bottom: 5px;
+    border-bottom: 3px solid transparent; /* デフォルトの線を透明に */
+    background: linear-gradient(to right, #5befe1 25%, #ddd 25%);
+    background-size: 100% 3px; /* 下線の太さを指定 */
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+  
+  .careerList {
+    margin: 20px 50px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .careerItem {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .careerYear {
+    width: 80px;
+    min-width: 80px;
+    text-align: left;
+  }
+  
+  .careerText {
+    flex: 1;
+    text-align: left;
+  }
+  
   &__like {
     font-size: 14px;
     background-color: rgb(241, 241, 241);
@@ -99,6 +147,27 @@
     }
   }
     
+  .licenseTable {
+    width: 100%; /* テーブルを親要素の幅に合わせる */
+    border-collapse: collapse; /* セル間の余白を除去 */
+    margin-top: 10px;
+  
+    td {
+      padding: 10px; /* セル内の余白を設定 */
+      vertical-align: top; /* テキストを上揃え */
+    }
+  
+    td:first-child {
+      width: 100%; /* スキル名の幅を固定 */
+      font-weight: bold; /* スキル名を強調 */
+      text-align: left; /* 左揃え */
+    }
+  
+    td:last-child {
+      text-align: left; /* 年数部分も左揃え */
+      word-break: break-word; /* 折り返しを許可 */
+    }
+  }
 
   @media (max-width: 860px) {
     &__pic {
@@ -110,10 +179,11 @@
       margin-left: 0; /* 左の余白をリセット */
       margin-top: 10px; /* 画像との間に余白を追加 */
     }
-
     &__pr {
-      margin-top: 5px;
-      font-size: 12px;
+      margin: 10px 30px;
+      padding: 10px;
+      font-size: 14px;
+      line-height: 2.0;
     }
 
     &__history {
@@ -125,7 +195,13 @@
       font-size: 12px;
       margin: 20px 30px;
     }
-
+    .about__career {
+      margin-top: 0;
+    }
+    .careerList {
+      margin: 10px 30px;
+      font-size: 14px;
+    }
     .about__skill p {
       gap: 0px; /* スキル名と年数の間に隙間を作成 */
     }

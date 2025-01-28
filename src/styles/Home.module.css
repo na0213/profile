@@ -196,6 +196,7 @@
     border-radius: 8px; /* 角を少し丸く */
     padding: 10px; /* 内側の余白 */
     margin: 25px 0; /* 上下の余白 */
+    line-height: 1.8;
   }
   .farm__link {
     text-decoration: none; /* 初期状態では下線なし */

@@ -8,29 +8,61 @@ const About = () => {
     <div className={styles.about}>
       <div className={styles.about__title}>About</div>
 
-      <div className={styles.about__pic}>
-        <Image
-        src="/mypic.PNG"
-        alt="Icon"
-        width={200}
-        height={200}
-        />
-        <div className={styles.about__prof}>石﨑 なつみ</div>
-      </div>
-      <div className={styles.about__pr}>
-        <p>個人開発歴4年目。</p>
-        <p>ヘアメイクや大学病院での研究補助、化粧品・健康食品メーカーでの物流・品質管理業務を経験しながらオリジナルWEBサイトを開発。</p>
-        <p>現在は、個人開発を行う傍ら、牧場訪問を通じて食の背景や代表の方の思いを学び、それを発信する活動を展開中。</p>
-        <p>地域の魅力を伝えるインタビューライターやバイヤーとしても活動し、牧場や地域に根ざした食の魅力を広く届けることを目指している。</p>
-        <p>学生時代はイルカ・クジラの研究を行い、修士号を取得。人と動物の共存についても考えを深めている。</p>
+      <div className={styles.about__career}>
+        <div className={styles.about__section}></div>
+          <p className={styles.about__sectionTitle}>Profile</p>
+          <div className={styles.about__pic}>
+            <Image
+            src="/mypic.PNG"
+            alt="Icon"
+            width={200}
+            height={200}
+            />
+            <div className={styles.about__prof}>石﨑 なつみ<br></br>Iszaki Natsumi</div>
+            
+          </div>
+          <div className={styles.about__pr}>
+            <p>これまで多様な業界に携わり、コミュニケーションを大切にしながら独学でプログラミングを学習。</p>
+            <p>HTML/CSS、JavaScript、PHPなどを習得し、開発の楽しさを知り、自らWEBサイトの制作を手がける。</p>
+            <p>一方で、地域の魅力を伝える活動にも注力し、多様な人と関わる中で新たな視点を学び続けている。</p>
+          </div>
       </div>
 
-      <div className={styles.about__like}>
-        <p><span>活動</span>：インタビューライター、地域バイヤー、個人開発</p>
+      <div className={styles.about__career}>
+        <div className={styles.about__section}>
+          <p className={styles.about__sectionTitle}>Career</p>
+          <div className={styles.careerList}>
+            <div className={styles.careerItem}>
+              <p className={styles.careerYear}>2008年</p>
+              <p className={styles.careerText}>大学院卒業後、医療系企業でルートサービス業を担当（正社員）</p>
+            </div>
+            <div className={styles.careerItem}>
+              <p className={styles.careerYear}>2012年</p>
+              <p className={styles.careerText}>ヘアメイクとして勤務（アルバイト）</p>
+            </div>
+            <div className={styles.careerItem}>
+              <p className={styles.careerYear}>2014年</p>
+              <p className={styles.careerText}>大学病院で研究補助・秘書業務を担当（契約社員）</p>
+            </div>
+            <div className={styles.careerItem}>
+              <p className={styles.careerYear}>2017年</p>
+              <p className={styles.careerText}>化粧品・健康食品メーカーで受発注業務、品質管理を担当（正社員）</p>
+            </div>
+            <div className={styles.careerItem}>
+              <p className={styles.careerYear}>2024年</p>
+              <p className={styles.careerText}>スポーツ協会の事務を担当（派遣社員）<br></br>
+              インタビューライターとして活動（業務委託）</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className={styles.about__career}>
+        <div className={styles.about__section}></div>
+          <p className={styles.about__sectionTitle}>Skills</p>
       </div>
       <div className={styles.about__history}>
         <div className={styles.about__skill}>
-          <p className={styles.about__skillTitle}>Skill</p>
           <table className={styles.skillTable}>
             <tbody>
               <tr>
@@ -70,38 +102,55 @@ const About = () => {
         </div>
       </div>
 
-      <div className={styles.about__history}>
-      <div className={styles.about__skill}>
-        <p className={styles.about__skillTitle}>History</p>
-        <table className={styles.historyTable}>
-          <tbody>
-            <tr>
-              <td>2024年</td>
-              <td>地域バイヤープログラム第4期（（株）WHERE）にて、コミュニティマネージャーとして活動</td>
-            </tr>
-            <tr>
-              <td>2024年</td>
-              <td>地域バイヤープログラム第3期（（株）WHERE）受講</td>
-            </tr>
-            <tr>
-              <td>2024年</td>
-              <td>インタビューライタープログラム第5期（（株）WHERE）受講</td>
-            </tr>
-            <tr>
-              <td>2023年</td>
-              <td>G&apos;s ACADEMY DEVコース受講</td>
-            </tr>
-            <tr>
-              <td>2020年</td>
-              <td>SAMURAI ENGINEER エキスパートコース受講</td>
-            </tr>
-          </tbody>
-        </table>
+      <div className={styles.about__career}>
+        <div className={styles.about__section}>
+          <p className={styles.about__sectionTitle}>Education</p>
+          <div className={styles.careerList}>
+            <div className={styles.careerItem}>
+              <p className={styles.careerYear}>2020年</p>
+              <p className={styles.careerText}>SAMURAI ENGINEER エキスパートコース受講</p>
+            </div>
+            <div className={styles.careerItem}>
+              <p className={styles.careerYear}>2023年</p>
+              <p className={styles.careerText}>G&apos;s ACADEMY DEVコース受講</p>
+            </div>
+            <div className={styles.careerItem}>
+              <p className={styles.careerYear}>2024年</p>
+              <p className={styles.careerText}>地域バイヤープログラム第3期（（株）WHERE）受講</p>
+            </div>
+            <div className={styles.careerItem}>
+              <p className={styles.careerYear}>2024年</p>
+              <p className={styles.careerText}>インタビューライタープログラム第5期（（株）WHERE）受講</p>
+            </div>
+            <div className={styles.careerItem}>
+              <p className={styles.careerYear}>2024年</p>
+              <p className={styles.careerText}>地域バイヤープログラム第4期（（株）WHERE）にて、コミュニティマネージャーとして活動</p>
+            </div>
+          </div>
+
+          <div className={styles.about__career}>
+            <div className={styles.about__section}></div>
+              <p className={styles.about__sectionTitle}>Licenses</p>
+          </div>
+          <div className={styles.about__history}>
+            <div className={styles.about__license}>
+              <table className={styles.licenseTable}>
+                <tbody>
+                  <tr>
+                    <td>・普通自動車第一種運転免許（AT）</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>・化粧品成分検定２級</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
       </div>
     </div>
-    <div className={styles.about__like}>
-        <p><span>好き</span>：牧場、旅、温泉、釣り、食べること、トレイルランニング、プログラミング、フェレット</p>
-      </div>
     </div>
   );
 }

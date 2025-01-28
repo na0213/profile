@@ -22,7 +22,7 @@ const Header = () => {
           <Link href="/#about" scroll={false}>About</Link>
         </li>
         <li>
-          <Link href="/#works" scroll={false}>Activity</Link>
+          <Link href="/#works" scroll={false}>Works</Link>
         </li>
         <li>
           <Link href="/#contact" scroll={false}>Contact</Link>

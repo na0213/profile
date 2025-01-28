@@ -21,11 +21,11 @@ const Farm = () => {
         <Link href="/#works">
           <p>Activity</p>
         </Link>
-        <p>＞　牧場へ行こう</p>
+        <p>＞　牧場行きたい</p>
       </div>
 
       <div className={styles.farm}>
-        <div className={styles.farm__title}>オリジナルWEBサイトー牧場へ行こうー</div>
+        <div className={styles.farm__title}>オリジナルWEBサイトー牧場行きたいー</div>
         {/* <div onClick={handleModalOpen} className={styles.farm__link}>
           <p className={styles.farm__pr}>
             巡った牧場をご紹介できるWEBサイトを制作中。<br />
