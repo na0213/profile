@@ -22,9 +22,10 @@ const About = () => {
             
           </div>
           <div className={styles.about__pr}>
-            <p>これまで多様な業界に携わり、コミュニケーションを大切にしながら独学でプログラミングを学習。</p>
-            <p>HTML/CSS、JavaScript、PHPなどを習得し、開発の楽しさを知り、自らWEBサイトの制作を手がける。</p>
-            <p>一方で、地域の魅力を伝える活動にも注力し、多様な人と関わる中で新たな視点を学び続けている。</p>
+            <p>これまで多様な業務に携わり、コミュニケーションを大切にしながら経験を積んできました。</p>
+            <p>2022年より、独学とスクールでプログラミングを学び、HTML/CSS、JavaScript、PHPなどを習得。</p>
+            <p>開発の楽しさを知り、自らWEBサイトの制作に取り組んでいます。</p>
+            <p>また、地域の魅力を伝える活動にも力を入れ、多様な人との関わりを通じて新たな視点を学び続けています。</p>
           </div>
       </div>
 
@@ -107,7 +108,7 @@ const About = () => {
           <p className={styles.about__sectionTitle}>Education</p>
           <div className={styles.careerList}>
             <div className={styles.careerItem}>
-              <p className={styles.careerYear}>2020年</p>
+              <p className={styles.careerYear}>2022年</p>
               <p className={styles.careerText}>SAMURAI ENGINEER エキスパートコース受講</p>
             </div>
             <div className={styles.careerItem}>
