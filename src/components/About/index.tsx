@@ -18,7 +18,7 @@ const About = () => {
             width={200}
             height={200}
             />
-            <div className={styles.about__prof}>石﨑 なつみ<br></br>Iszaki Natsumi</div>
+            <div className={styles.about__prof}>石﨑 なつみ<br></br>Ishizaki Natsumi</div>
             
           </div>
           <div className={styles.about__pr}>
@@ -68,19 +68,19 @@ const About = () => {
             <tbody>
               <tr>
                 <td>HTML</td>
-                <td>〜4年</td>
+                <td>〜3年</td>
               </tr>
               <tr>
                 <td>CSS</td>
-                <td>〜4年</td>
+                <td>〜3年</td>
               </tr>
               <tr>
                 <td>JavaScript</td>
-                <td>〜4年</td>
+                <td>〜3年</td>
               </tr>
               <tr>
                 <td>PHP/Laravel</td>
-                <td>〜4年</td>
+                <td>〜3年</td>
               </tr>
               <tr>
                 <td>React</td>
@@ -92,11 +92,11 @@ const About = () => {
               </tr>
               <tr>
                 <td>MySQL</td>
-                <td>〜4年</td>
+                <td>〜3年</td>
               </tr>
               <tr>
                 <td>Git</td>
-                <td>〜4年</td>
+                <td>〜3年</td>
               </tr>
             </tbody>
           </table>

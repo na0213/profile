@@ -21,28 +21,6 @@ const Work = () => {
         <div className={styles.work__title}>Works</div>
 
         <div className={styles.work__container}>
-        <Link href="/portfolio/article2">
-            <div className={styles.work__pic}>
-                <Image
-                src="/community.jpg"
-                alt="Icon"
-                width={200}
-                height={200}
-                />
-                <p className={styles.work__pr}>取材執筆<br></br>鼎談記事</p>
-            </div>
-        </Link>
-        <Link href="/portfolio/article1">
-            <div className={styles.work__pic}>
-                <Image
-                src="/gyuya.jpg"
-                alt="Icon"
-                width={200}
-                height={200}
-                />
-                <p className={styles.work__pr}>取材執筆<br></br>「氷見 牛屋」代表の取材記事</p>
-            </div>
-        </Link>
         <Link href="/portfolio/farm">
           <div className={styles.work__pic}>
             <Image
@@ -64,6 +42,28 @@ const Work = () => {
             />
             <p className={styles.work__pr}>オリジナルWEBサービス<br></br>FOOCH</p>
           </div>
+        </Link>
+        <Link href="/portfolio/article2">
+            <div className={styles.work__pic}>
+                <Image
+                src="/community.jpg"
+                alt="Icon"
+                width={200}
+                height={200}
+                />
+                <p className={styles.work__pr}>取材執筆<br></br>鼎談記事</p>
+            </div>
+        </Link>
+        <Link href="/portfolio/article1">
+            <div className={styles.work__pic}>
+                <Image
+                src="/gyuya.jpg"
+                alt="Icon"
+                width={200}
+                height={200}
+                />
+                <p className={styles.work__pr}>取材執筆<br></br>「氷見 牛屋」代表の取材記事</p>
+            </div>
         </Link>
         </div>
     </div>
