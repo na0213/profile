@@ -21,44 +21,42 @@ const Farm = () => {
         <Link href="/#works">
           <p>Activity</p>
         </Link>
-        <p>＞　牧場行きたい</p>
+        <p>＞　牧場いきたい</p>
       </div>
 
       <div className={styles.farm}>
-        <div className={styles.farm__title}>オリジナルWEBサイトー牧場行きたいー</div>
-        {/* <div onClick={handleModalOpen} className={styles.farm__link}>
-          <p className={styles.farm__pr}>
-            巡った牧場をご紹介できるWEBサイトを制作中。<br />
-            訪問記録や撮影画像などを掲載し牧場の魅力を伝えられるサイトにしていきます。<br />
-            <br />
-            ▶︎WEBサイトへ
-          </p>
-          
-          <div className={styles.farm__imagecontainer}>
-            <Image
-              src="/farmpic.png" // publicフォルダにある画像へのパス
-              alt="FOOCH Image"
-              width={1200}
-              height={400}
-              layout="responsive"
-              className={styles.farm__image}
-            />
-          </div>
-        </div> */}
-        {/* モーダルウィンドウ */}
-        {/* {isModalOpen && (
-          <div className={styles.modal}>
-            <div className={styles.modalContent}>
-              <p>11月中に公開予定です🐧</p>
-              <button onClick={handleModalClose}>閉じる</button>
-            </div>
-          </div>
-        )} */}
-
+        <div className={styles.farm__title}>オリジナルWEBサイト</div>
+        <div className={styles.about__history}>
+        <div className={styles.about__skill}>
+          <table className={styles.skillTable}>
+            <tbody>
+              <tr>
+                <td>タイトル</td>
+                <td>牧場いきたい</td>
+              </tr>
+              <tr>
+                <td>目的</td>
+                <td>
+                  <div>牧場（一次産業）に興味をもってもらうこと</div>
+                  <div>足を運んでみたいと思ってもらうこと</div>
+                </td>
+              </tr>
+              <tr>
+                <td>ターゲット</td>
+                <td>動物が好きな人・食に関心のある人・ファミリー層</td>
+              </tr>
+              <tr>
+                <td>意識したこと</td>
+                <td>
+                  <div>やわらかくナチュラルな印象で親しみをだすこと</div>
+                  <div>牧場の自然な雰囲気を表現する色合いにすること</div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
         <Link href="https://www.farm360.jp/" target="_blank" rel="noopener noreferrer">
-          <p className={styles.farm__pr}>巡った牧場をご紹介できるWEBサイトを制作。<br>
-          </br>インタビュー記事や撮影画像などを掲載し牧場の魅力を伝えていきます。<br>
-          </br>▶︎WEBサイトへ</p>
           <div className={styles.farm__imagecontainer}>
             <Image
               src="/farmgo.png" // publicフォルダにある画像へのパス

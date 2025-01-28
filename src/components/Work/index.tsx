@@ -29,7 +29,7 @@ const Work = () => {
               width={200}
               height={200}
             />
-            <p className={styles.work__pr}>オリジナルWEBサイト<br></br>「牧場行きたい」</p>
+            <p className={styles.work__pr}>オリジナルWEBサイト<br></br>「牧場いきたい」</p>
           </div>
         </Link>
         <Link href="/portfolio/fooch">

@@ -189,6 +189,45 @@
         background-color: #4f5050;
       }
 
+.skillTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background-color: rgb(241, 241, 241); /* ⬅ `about__history` の背景色を適用 */
+    font-size: 14px; /* ⬅ `about__history` のフォントサイズを適用 */
+    padding: 10px;
+}
+
+.skillTable td {
+    padding: 10px;
+    vertical-align: top;
+}
+
+.skillTable td:first-child {
+    width: 150px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.skillTable td:last-child {
+    text-align: left;
+    word-break: break-word;
+}
+    
+/* 履歴セクションのスタイル */
+.about__history {
+    font-size: 14px;
+    background-color: rgb(241, 241, 241);
+    margin: 20px 0;
+    padding: 10px;
+    align-items: flex-start;
+}
+
+/* 強調スタイル */
+.about__like p span {
+    font-weight: bold;
+}
+    
 /* evene.jsの装飾 */
 .farm__highlight {
     background-color: #f9f9f9; /* 薄いグレーの背景 */
