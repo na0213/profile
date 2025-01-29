@@ -283,6 +283,13 @@
         width: 230px;
         height: 130px;
     }
+    .skillTable {
+        font-size: 12px; /* ⬅ `about__history` のフォントサイズを適用 */
+    }
+    .skillTable td:first-child {
+        width: 80px; /* 年号部分を少し狭く */
+    }
+
 }
 @media (max-width: 680px) {
     .farm {
