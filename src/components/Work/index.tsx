@@ -43,7 +43,7 @@ const Work = () => {
             <p className={styles.work__pr}>オリジナルWEBサービス<br></br>FOOCH</p>
           </div>
         </Link> */}
-        <Link href="/portfolio/article2">
+        {/* <Link href="/portfolio/article2">
             <div className={styles.work__pic}>
                 <Image
                 src="/community.jpg"
@@ -64,7 +64,7 @@ const Work = () => {
                 />
                 <p className={styles.work__pr}>取材執筆<br></br>「氷見 牛屋」代表の取材記事</p>
             </div>
-        </Link>
+        </Link> */}
         </div>
     </div>
   );
