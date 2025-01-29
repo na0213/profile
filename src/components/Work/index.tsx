@@ -32,7 +32,7 @@ const Work = () => {
             <p className={styles.work__pr}>オリジナルWEBサイト<br></br>「牧場いきたい」</p>
           </div>
         </Link>
-        <Link href="/portfolio/fooch">
+        {/* <Link href="/portfolio/fooch">
           <div className={styles.work__pic}>
             <Image
                 src="/fooch.png"
@@ -42,7 +42,7 @@ const Work = () => {
             />
             <p className={styles.work__pr}>オリジナルWEBサービス<br></br>FOOCH</p>
           </div>
-        </Link>
+        </Link> */}
         <Link href="/portfolio/article2">
             <div className={styles.work__pic}>
                 <Image
