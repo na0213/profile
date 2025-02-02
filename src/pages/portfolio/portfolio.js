@@ -63,10 +63,9 @@ const Farm = () => {
             </table>
           </div>
         </div>
-        <div className="image-grid">
-        {/* 画像一覧 */}
         <div className={styles.imageGrid}>
           {["top.png", "skills.png", "works.png"].map((img, index) => (
+            <div key={index} className={styles.imageItem}>
               <Image 
                 src={`/${img}`} 
                 alt={`ポートフォリオ ${index + 1}`} 
@@ -75,8 +74,8 @@ const Farm = () => {
                 layout="intrinsic" // 比率を保つ
                 objectFit="contain" // 画像を変形させずに収める
               />
+            </div>
           ))}
-        </div>
         </div>
 
       </div>
