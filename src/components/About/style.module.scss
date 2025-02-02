@@ -56,6 +56,7 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+    font-size: 14px;
   }
   
   .careerItem {
@@ -64,7 +65,7 @@
   }
   
   .careerYear {
-    width: 80px;
+    width: 120px;
     min-width: 80px;
     text-align: left;
   }
@@ -72,7 +73,48 @@
   .careerText {
     flex: 1;
     text-align: left;
+    padding-left: 20px;
   }
+  .about__subSection {
+    margin-top: 20px;
+  }
+  
+  .about__subSectionTitle {
+    font-size: 16px;
+    color: #404040;
+    margin-bottom: 10px;
+    margin-left: 25px;
+    border-left: 4px solid #5befe1;
+    padding-left: 10px;
+  }
+  .skilltitle {
+    font-weight: bold;
+    display: inline-block; /* インラインブロック化で隙間を減らす */
+    margin-bottom: 5px; /* 余白を縮める */
+}
+
+.skilldisc {
+    font-weight: lighter;
+    line-height: 1.5; /* 行間を調整 */
+    margin-top: 0; /* 上の余白をゼロに */
+}
+  .skillList {
+    margin: 20px 10px;
+    padding: 10px;
+    list-style-type: none;
+  }
+  
+  .skillList li {
+    margin-bottom: 15px;
+    padding-left: 10px;
+    border-left: 3px solid #ddd;
+  }
+  
+  .skillList strong {
+    font-size: 16px;
+    color: #333;
+  }
+  
   
   &__like {
     font-size: 14px;
@@ -169,7 +211,7 @@
     }
   }
 
-  @media (max-width: 860px) {
+  @media (max-width: 768px) {
     &__pic {
       display: block; /* 縦並びに変更 */
       text-align: center; /* コンテンツを中央揃え */
@@ -182,7 +224,7 @@
     &__pr {
       margin: 10px 30px;
       padding: 10px;
-      font-size: 14px;
+      font-size: 12px;
       line-height: 2.0;
     }
 
@@ -199,8 +241,8 @@
       margin-top: 0;
     }
     .careerList {
-      margin: 10px 30px;
-      font-size: 14px;
+      margin: 10px 20px;
+      font-size: 12px;
     }
     .about__skill p {
       gap: 0px; /* スキル名と年数の間に隙間を作成 */
@@ -212,6 +254,9 @@
 
     td:first-child {
       width: 70px; /* 年号部分を少し狭く */
+    }
+    .about__subSectionTitle {
+      margin-left: 10px;
     }
   }
 }

@@ -271,6 +271,67 @@
   .farm__bold {
     font-weight: bold;
   }
+  .farm__links {
+    margin-top: 50px;
+    text-align: center;
+    font-weight: bold;
+  }
+  .techList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .techList li {
+    background: #f5f5f5;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+
+/* PC用スクリーンショット（Works） */
+.imageGrid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    max-width: 90%; /* 全体の幅を少し縮小 */
+    margin: 0 auto;
+  }
+  
+  /* スマホビュー用スクリーンショット（2枚横並び） */
+  .responsiveImages {
+    display: flex;
+    gap: 15px; /* 画像間のスペースを調整 */
+    justify-content: center;
+    margin-top: 30px;
+    max-width: 80%; /* 全体の幅を縮小 */
+  }
+  
+  /* 画像サイズを縮小 */
+  .responsiveImageItem {
+    flex: 1;
+    max-width: 40%; /* 2枚を並べた時の幅 */
+  }
+  
+  /* スマホ対応（縦並び＋縮小） */
+  @media (max-width: 768px) {
+    .imageGrid {
+      max-width: 75%; /* PCよりもさらに縮小 */
+    }
+  
+    .responsiveImages {
+      align-items: center;
+      max-width: 60%; /* スマホで適度に縮小 */
+    }
+  
+    .responsiveImageItem {
+      max-width: 75%; /* 縦並びになった時の画像サイズを縮小 */
+    }
+  }
+  
 @media (max-width: 860px) {
     .textOverlay {
         top: 30%; /* 画像の縦中央に配置 */

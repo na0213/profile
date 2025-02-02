@@ -41,7 +41,7 @@ const Contact = () => {
 
   return (
 <div className={styles.contact}>
-  <div className={styles.contact__title}>Contact Us</div>
+  <div className={styles.contact__title}>Contact</div>
   <form onSubmit={handleSubmit}>
     <div>
       <label htmlFor="name">お名前<span className={styles.required}> ※必須</span></label>

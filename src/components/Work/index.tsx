@@ -21,7 +21,7 @@ const Work = () => {
         <div className={styles.work__title}>Works</div>
 
         <div className={styles.work__container}>
-        <Link href="/portfolio/farm">
+        <Link href="/portfolio/farm" className={styles.work__item}>
           <div className={styles.work__pic}>
             <Image
               src="/farm360.png"
@@ -29,8 +29,21 @@ const Work = () => {
               width={200}
               height={200}
             />
-            <p className={styles.work__pr}>オリジナルWEBサイト<br></br>「牧場いきたい」</p>
           </div>
+          <p className={styles.work__pr}>個人制作<br />「牧場いきたい」</p>
+          <p className={styles.work__details}>▶ 詳細を見る</p>
+        </Link>
+        <Link href="/portfolio/portfolio" className={styles.work__item}>
+          <div className={styles.work__pic}>
+            <Image
+              src="/portfolio.png"
+              alt="Farm 360 Project"
+              width={200}
+              height={200}
+            />
+          </div>
+          <p className={styles.work__pr}>個人制作<br />ポートフォリオ</p>
+          <p className={styles.work__details}>▶ 詳細を見る</p>
         </Link>
         {/* <Link href="/portfolio/fooch">
           <div className={styles.work__pic}>

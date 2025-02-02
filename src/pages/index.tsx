@@ -37,9 +37,9 @@ export default function Home() {
         <div id="works">
           <Work />
         </div>
-        <div id="works">
+        {/* <div id="works">
           <Activity />
-        </div>
+        </div> */}
         <div id="contact">
           <Contact />
         </div>

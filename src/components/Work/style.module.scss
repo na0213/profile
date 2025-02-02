@@ -21,15 +21,45 @@
     color: inherit; /* テキストの色を継承 */
   }
 
+  &__item {
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   &__pic {
-    text-align: center; /* 画像と説明を中央揃え */
-    flex-basis: calc(33.333% - 20px); /* 1行に3つのセットを表示 */
-    box-sizing: border-box; /* パディングやマージンを含めた幅調整 */
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    width: 200px;
+    height: 200px;
   }
 
   &__pr {
     font-size: 12px;
     text-align: center;
+    margin-top: 8px;
+  }
+
+  &__details {
+    background: #01c7b3;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+    transition: background 0.3s ease;
+  }
+
+  &__item:hover &__details {
+    background: #148b81; /* ホバー時に色を濃く */
   }
   /* アニメーション前の状態 */
 

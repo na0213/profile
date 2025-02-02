@@ -1,10 +1,11 @@
 // import { useState } from 'react';
-import React from 'react';
+import React, { useState } from "react";
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from "@/styles/Home.module.css";
 
 const Farm = () => {
+  const [selectedImage, setSelectedImage] = useState(null);
   // const [isModalOpen, setIsModalOpen] = useState(false);
 
   // const handleModalOpen = () => {
@@ -21,11 +22,11 @@ const Farm = () => {
         <Link href="/#works">
           <p>Works</p>
         </Link>
-        <p>＞　牧場いきたい</p>
+        <p>＞　ポートフォリオ</p>
       </div>
 
       <div className={styles.farm}>
-        <div className={styles.farm__title}>個人制作「牧場いきたい」</div>
+        <div className={styles.farm__title}>個人制作ポートフォリオ</div>
         <div className={styles.about__history}>
           <div className={styles.about__skill}>
             <table className={styles.skillTable}>
@@ -33,29 +34,29 @@ const Farm = () => {
                 <tr>
                   <td>目的</td>
                   <td>
-                    <div>牧場（一次産業）に興味をもってもらうこと</div>
-                    <div>足を運んでみたいと思ってもらうこと</div>
+                    <div>自身の経歴やスキルを分かりやすく伝える</div>
+                    <div>制作実績を整理し、スムーズに閲覧できるようにする</div>
                   </td>
                 </tr>
                 <tr>
                   <td>ターゲット</td>
-                  <td>動物が好きな人・食に関心のある人・ファミリー層</td>
+                  <td>Web制作会社の採用担当者・エンジニア</td>
                 </tr>
                 <tr>
                   <td>意識したこと</td>
                   <td>
-                    <div>やわらかくナチュラルな印象で親しみをだすこと</div>
-                    <div>牧場の自然な雰囲気を表現する色合いにすること</div>
+                    <div>「何ができるのか」が伝わるようにすること</div>
+                    <div>直感的にナビゲーションしやすい設計</div>
                   </td>
                 </tr>
                 <tr>
                   <td>技術</td>
                   <td>
                     <ul className={styles.techList}>
-                      <li>Laravel</li>
-                      <li>AWS S3</li>
-                      <li>Tailwind CSS</li>
-                      <li>Heroku</li>
+                      <li>React</li>
+                      <li>Next.js</li>
+                      <li>TypeScript</li>
+                      <li>Vercel</li>
                     </ul>
                   </td>
                 </tr>
@@ -63,21 +64,24 @@ const Farm = () => {
             </table>
           </div>
         </div>
-        <div className={styles.farm__links}>
-          <Link href="https://www.farm360.jp/" target="_blank" rel="noopener noreferrer">
-          🔗 デプロイサイトを開く
-            <div className={styles.farm__imagecontainer}>
-              <Image
-                src="/farmgo.png" // publicフォルダにある画像へのパス
-                alt="Farm Image"
-                width={1200} // 画像の幅
-                height={400} // 画像の高さ
-                layout="responsive" // 画像をレスポンシブに表示
-                className={styles.farm__image}
+        <div className="image-grid">
+        {/* 画像一覧 */}
+        <div className={styles.imageGrid}>
+          {["top.png", "skills.png", "works.png"].map((img, index) => (
+            <div key={index} className={styles.imageItem} onClick={() => setSelectedImage(img)}>
+              <Image 
+                src={`/${img}`} 
+                alt={`ポートフォリオ ${index + 1}`} 
+                width={400} 
+                height={250} 
+                layout="intrinsic" // 比率を保つ
+                objectFit="contain" // 画像を変形させずに収める
               />
             </div>
-          </Link>
+          ))}
         </div>
+        </div>
+
       </div>
       {/* 戻る */}
       <div className={styles.back}>
