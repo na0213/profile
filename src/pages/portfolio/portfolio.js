@@ -1,11 +1,10 @@
 // import { useState } from 'react';
-import React, { useState } from "react";
+import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from "@/styles/Home.module.css";
 
 const Farm = () => {
-  const [selectedImage, setSelectedImage] = useState(null);
   // const [isModalOpen, setIsModalOpen] = useState(false);
 
   // const handleModalOpen = () => {
@@ -68,7 +67,6 @@ const Farm = () => {
         {/* 画像一覧 */}
         <div className={styles.imageGrid}>
           {["top.png", "skills.png", "works.png"].map((img, index) => (
-            <div key={index} className={styles.imageItem} onClick={() => setSelectedImage(img)}>
               <Image 
                 src={`/${img}`} 
                 alt={`ポートフォリオ ${index + 1}`} 
@@ -77,7 +75,6 @@ const Farm = () => {
                 layout="intrinsic" // 比率を保つ
                 objectFit="contain" // 画像を変形させずに収める
               />
-            </div>
           ))}
         </div>
         </div>
