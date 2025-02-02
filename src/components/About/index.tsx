@@ -59,51 +59,58 @@ const About = () => {
       </div>
 
       <div className={styles.about__career}>
-        <div className={styles.about__section}></div>
+        <div className={styles.about__section}>
           <p className={styles.about__sectionTitle}>Skills</p>
-      </div>
-      {/* <div className={styles.about__history}> */}
-      <div className={styles.about__skill}>
-          <p className={styles.about__subSectionTitle}>バックエンド</p>
           <div className={styles.careerList}>
-            <p className={styles.skilltitle}>PHP / Laravel</p>
-            <p className={styles.skilldisc}>MVCモデルの理解と開発<br />
+
+            <div className={styles.careerItem}>
+              <p className={styles.careerYear}>バックエンド</p>
+              <p className={styles.careerText}><strong>PHP / Laravel</strong><br />
+                MVCモデルの理解と開発<br />
                 認証機能や管理画面の実装<br />
-                API開発・データ取得処理の実装
-            </p>
-          </div>
-          <p className={styles.about__subSectionTitle}>フロントエンド</p>
-          <div className={styles.careerList}>
-            <p className={styles.skilltitle}>HTML / CSS</p>
-            <p className={styles.skilldisc}>適切なHTML構造・metaタグ最適化<br />
+                API開発・データ取得処理の実装</p>
+            </div>
+            <div className={styles.careerItem}>
+              <p className={styles.careerYear}>フロントエンド</p>
+              <p className={styles.careerText}><strong>HTML / CSS</strong><br />
+              適切なHTML構造<br />
               alt属性の適切な設定、視認性向上<br />
               レスポンシブデザイン
-            </p>
-            <p className={styles.skilltitle}>JavaScript</p>
-            <p className={styles.skilldisc}>フォームのバリデーション・インタラクションの実装<br />
-            UI改善のための動的処理の追加<br />（スライダー、モーダル、アコーディオンなど）
-            </p>
-            <p className={styles.skilltitle}>React / Next.js</p>
-            <p className={styles.skilldisc}>Reactの基本構造の理解<br />
-            Next.jsを用いたページ遷移の実装
-            </p>
-          </div>
-          {/* データベース */}
-          <p className={styles.about__subSectionTitle}>データベース</p>
-          <div className={styles.careerList}>
-            <p className={styles.skilltitle}>MySQL</p>
-            <p className={styles.skilldisc}>データベース設計<br />（テーブル・リレーション設計）
-            </p>
-          </div>
-          {/* その他 */}
-          <p className={styles.about__subSectionTitle}>その他</p>
-          <div className={styles.careerList}>
-            <p className={styles.skilltitle}>Git / GitHub</p>
-            <p className={styles.skilldisc}>個人開発プロジェクトのバージョン管理・GitHubを利用したコード管理
-            </p>
+              </p>
+            </div>
+
+            <div className={styles.careerItem}>
+              <p className={styles.careerYear}></p>
+              <p className={styles.careerText}><strong>JavaScript</strong><br />
+              フォームのバリデーション・インタラクションの実装<br />
+              UI改善のための動的処理の追加<br />（スライダー、モーダル、アコーディオンなど）
+              </p>
+            </div>
+
+            <div className={styles.careerItem}>
+              <p className={styles.careerYear}></p>
+              <p className={styles.careerText}><strong>React / Next.js</strong><br />
+              Reactの基本構造の理解<br />
+              Next.jsを用いたページ遷移の実装
+              </p>
+            </div>
+
+            <div className={styles.careerItem}>
+              <p className={styles.careerYear}>データベース</p>
+              <p className={styles.careerText}><strong>MySQL</strong><br />
+              データベース設計<br />（テーブル・リレーション設計）
+              </p>
+            </div>
+
+            <div className={styles.careerItem}>
+              <p className={styles.careerYear}>その他</p>
+              <p className={styles.careerText}><strong>Git / GitHub</strong><br />
+              個人開発プロジェクトのバージョン管理・GitHubを利用したコード管理
+              </p>
+            </div>
           </div>
         </div>
-      {/* </div> */}
+      </div>
 
       <div className={styles.about__career}>
         <div className={styles.about__section}>
