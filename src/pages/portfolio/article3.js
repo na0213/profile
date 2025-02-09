@@ -14,16 +14,15 @@ const Farm = () => {
       </div>
 
       <div className={styles.farm}>
-        <div className={styles.farm__title}>取材執筆ー氷見 牛屋ー</div>
-        <Link href="https://localletter.jp/articles/gyuya_himi/" target="_blank" rel="noopener noreferrer">
-
+        <div className={styles.farm__title}>取材執筆ー十勝シティデザイン株式会社ー</div>
+        <Link href="https://localletter.jp/articles/hotelnupka_tokachi/" target="_blank" rel="noopener noreferrer">
           <p className={styles.farm__pr}>LOCAL LETTER掲載<br>
-          </br>インタビューライター講座で初めて取材・執筆した記事<br>
-          </br>▶︎LOCAL LETTERの掲載記事へ</p>
+          </br>十勝シティデザイン株式会社創業者への取材記事<br>
+          </br></p>
 
           <div className={styles.farm__imagecontainer}>
             <Image
-              src="/local.png" // publicフォルダにある画像へのパス
+              src="/local4.png" // publicフォルダにある画像へのパス
               alt="Image"
               width={1200} // 画像の幅
               height={400} // 画像の高さ

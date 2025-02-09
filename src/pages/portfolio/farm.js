@@ -41,7 +41,7 @@ const Farm = () => {
                   <td>ターゲット</td>
                   <td>動物が好きな人・食に関心のある人・ファミリー層</td>
                 </tr>
-                <tr>
+                {/* <tr>
                   <td>意識したこと</td>
                   <td>
                     <div>やわらかくナチュラルな印象で親しみをだすこと</div>
@@ -58,14 +58,14 @@ const Farm = () => {
                       <li>Heroku</li>
                     </ul>
                   </td>
-                </tr>
+                </tr> */}
               </tbody>
             </table>
           </div>
         </div>
         <div className={styles.farm__links}>
           <Link href="https://www.farm360.jp/" target="_blank" rel="noopener noreferrer">
-          🔗 デプロイサイトを開く
+          🔗 サイトを開く
             <div className={styles.farm__imagecontainer}>
               <Image
                 src="/farmgo.png" // publicフォルダにある画像へのパス

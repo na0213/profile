@@ -22,14 +22,59 @@ const About = () => {
             
           </div>
           <div className={styles.about__pr}>
-            <p>2022年より、独学とスクールでプログラミングを学び、HTML/CSS、JavaScript、PHPなどを習得。</p>
-            <p>開発の楽しさを知り、個人でWEBサイトの制作に取り組んでいます。</p>
-            <p>コミュニケーション力を大切にしながら地域と関わり、人とのつながりを広げる活動も行っています。</p>
-            <p>これまで多様な業務に携わった経験を活かし、視点を広く持ちながら、技術と実践力を高めています。</p>
+            <p>ヘアメイクや大学病院での研究補助、化粧品・健康食品メーカーでの物流・品質管理業務に従事しながらオリジナルWEBサイトを開発。</p>
+            <p>現在は、個人開発を続ける傍ら、牧場訪問を通じて食の背景や代表の方の思いを学び、それを発信する活動を展開中。</p>
+            <p>地域の魅力を伝えるインタビューライターやバイヤーとしても活動。</p>
+            <p>学生時代はイルカ・クジラの研究を行い、修士号を取得。</p>
           </div>
+            <div className={styles.about__like}>
+          <p><span>好き</span>：牧場、旅、温泉、釣り、食べること、トレイルランニング、プログラミング、フェレット</p>
+      </div>
       </div>
 
       <div className={styles.about__career}>
+        <div className={styles.about__section}>
+          <p className={styles.about__sectionTitle}>Education</p>
+
+          {/* IT関連 */}
+          <div className={styles.about__subSection}>
+            <p className={styles.about__subSectionTitle}>IT関連</p>
+            <div className={styles.careerList}>
+              <div className={styles.careerItem}>
+                <p className={styles.careerYear}>2023年</p>
+                <p className={styles.careerText}>G&apos;s ACADEMY<br />DEVコース 修了</p>
+              </div>
+              <div className={styles.careerItem}>
+                <p className={styles.careerYear}>2022年</p>
+                <p className={styles.careerText}>SAMURAI ENGINEER<br />エキスパートコース 修了</p>
+              </div>
+            </div>
+          </div>
+
+          {/* 地域関連 */}
+          <div className={styles.about__subSection}>
+            <p className={styles.about__subSectionTitle}>地域関連</p>
+            <div className={styles.careerList}>
+              <div className={styles.careerItem}>
+                <p className={styles.careerYear}>2024年11月〜</p>
+                <p className={styles.careerText}>地域バイヤープログラム 第4期（（株）WHERE）<br />
+                コミュニティマネージャーとして活動</p>
+              </div>
+              <div className={styles.careerItem}>
+                <p className={styles.careerYear}>2024年9月</p>
+                <p className={styles.careerText}>地域バイヤープログラム 第3期（（株）WHERE） 修了</p>
+              </div>
+              <div className={styles.careerItem}>
+                <p className={styles.careerYear}>2024年9月</p>
+                <p className={styles.careerText}>インタビューライター養成講座 第5期（（株）WHERE） 修了</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+      {/* <div className={styles.about__career}>
         <div className={styles.about__section}>
           <p className={styles.about__sectionTitle}>Career</p>
           <div className={styles.careerList}>
@@ -56,7 +101,7 @@ const About = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className={styles.about__career}>
         <div className={styles.about__section}>
@@ -111,48 +156,6 @@ const About = () => {
           </div>
         </div>
       </div>
-
-      <div className={styles.about__career}>
-        <div className={styles.about__section}>
-          <p className={styles.about__sectionTitle}>Education</p>
-
-          {/* IT関連 */}
-          <div className={styles.about__subSection}>
-            <p className={styles.about__subSectionTitle}>IT関連</p>
-            <div className={styles.careerList}>
-              <div className={styles.careerItem}>
-                <p className={styles.careerYear}>2023年</p>
-                <p className={styles.careerText}>G&apos;s ACADEMY<br />DEVコース 修了</p>
-              </div>
-              <div className={styles.careerItem}>
-                <p className={styles.careerYear}>2022年</p>
-                <p className={styles.careerText}>SAMURAI ENGINEER<br />エキスパートコース 修了</p>
-              </div>
-            </div>
-          </div>
-
-          {/* 地域関連 */}
-          <div className={styles.about__subSection}>
-            <p className={styles.about__subSectionTitle}>地域関連</p>
-            <div className={styles.careerList}>
-              <div className={styles.careerItem}>
-                <p className={styles.careerYear}>2024年11月〜</p>
-                <p className={styles.careerText}>地域バイヤープログラム 第4期（（株）WHERE）<br />
-                コミュニティマネージャーとして活動</p>
-              </div>
-              <div className={styles.careerItem}>
-                <p className={styles.careerYear}>2024年9月</p>
-                <p className={styles.careerText}>地域バイヤープログラム 第3期（（株）WHERE） 修了</p>
-              </div>
-              <div className={styles.careerItem}>
-                <p className={styles.careerYear}>2024年9月</p>
-                <p className={styles.careerText}>インタビューライター養成講座 第5期（（株）WHERE） 修了</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
 
     </div>
   );

@@ -8,7 +8,7 @@ const Farm = () => {
     <div className={styles.pagination}>
       <div className={styles.pagination__con}>
         <Link href="/#works">
-          <p>Activity</p>
+          <p>Works</p>
         </Link>
         <p>＞　writing</p>
       </div>

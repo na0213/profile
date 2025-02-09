@@ -18,7 +18,7 @@ const Farm = () => {
     <div className={styles.pagination}>
       <div className={styles.pagination__con}>
         <Link href="/#works">
-          <p>Activity</p>
+          <p>Works</p>
         </Link>
         <p>＞　FOOCH</p>
       </div>
@@ -41,7 +41,7 @@ const Farm = () => {
                 </td>
               </tr>
               <tr>
-                <td>ターゲット</td>
+                {/* <td>ターゲット</td>
                 <td>食にこだわりのある人・食物アレルギーのある人</td>
               </tr>
               <tr>
@@ -49,7 +49,7 @@ const Farm = () => {
                 <td>
                   <div>検索しやすいこと</div>
                   <div>わかりやすいUI</div>
-                </td>
+                </td> */}
               </tr>
             </tbody>
           </table>
