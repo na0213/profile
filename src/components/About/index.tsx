@@ -56,17 +56,17 @@ const About = () => {
             <p className={styles.about__subSectionTitle}>地域関連</p>
             <div className={styles.careerList}>
               <div className={styles.careerItem}>
-                <p className={styles.careerYear}>2024年11月〜</p>
+                {/* <p className={styles.careerYear}>2024年11月〜</p> */}
                 <p className={styles.careerText}>地域バイヤープログラム 第4期（（株）WHERE）<br />
                 コミュニティマネージャーとして活動</p>
               </div>
               <div className={styles.careerItem}>
-                <p className={styles.careerYear}>2024年9月</p>
-                <p className={styles.careerText}>地域バイヤープログラム 第3期（（株）WHERE） 修了</p>
+                {/* <p className={styles.careerYear}>2024年9月</p> */}
+                <p className={styles.careerText}>地域バイヤープログラム（（株）WHERE） 修了</p>
               </div>
               <div className={styles.careerItem}>
-                <p className={styles.careerYear}>2024年9月</p>
-                <p className={styles.careerText}>インタビューライター養成講座 第5期（（株）WHERE） 修了</p>
+                {/* <p className={styles.careerYear}>2024年9月</p> */}
+                <p className={styles.careerText}>インタビューライター養成講座（（株）WHERE） 修了</p>
               </div>
             </div>
           </div>

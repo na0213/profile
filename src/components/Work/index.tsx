@@ -19,7 +19,7 @@ const Work = () => {
   return (
     <div className={styles.work}>
         <div className={styles.work__title}>Works</div>
-
+        <p className={styles.work__pr}>※掲載可能なもののみ</p>
         <div className={styles.work__container}>
         <Link href="/portfolio/farm" className={styles.work__item}>
           <div className={styles.work__pic}>
@@ -45,7 +45,7 @@ const Work = () => {
           <p className={styles.work__pr}>取材執筆<br /></p>
           {/* <p className={styles.work__details}>▶ 詳細を見る</p> */}
         </Link>
-        <Link href="/portfolio/fooch" className={styles.work__item}>
+        {/* <Link href="/portfolio/fooch" className={styles.work__item}>
           <div className={styles.work__pic}>
             <Image
               src="/fooch.png"
@@ -55,8 +55,7 @@ const Work = () => {
             />
           </div>
           <p className={styles.work__pr}>個人制作<br />WEBサービス</p>
-          {/* <p className={styles.work__details}>▶ 詳細を見る</p> */}
-        </Link>
+        </Link> */}
         <Link href="/portfolio/article2" className={styles.work__item}>
           <div className={styles.work__pic}>
             <Image
