@@ -26,10 +26,10 @@ export default function Home() {
             height={400} // 画像の高さ
             layout="responsive" // 画像をレスポンシブに表示
           />
-          <div className={styles.textOverlay}>
+          {/* <div className={styles.textOverlay}>
             <div className={styles.ellipseBackground}></div>
             <p>スキをめぐる</p><p>スキをつなげる</p>
-          </div>
+          </div> */}
         </div>
         <div id="about">
           <About />
