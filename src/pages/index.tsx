@@ -20,7 +20,7 @@ export default function Home() {
       <div>
         <div className={styles.topImageWrapper}>
           <Image
-            src="/sky.JPG" // publicフォルダにある画像へのパス
+            src="/sky.png" // publicフォルダにある画像へのパス
             alt="Top Image"
             width={1200} // 画像の幅
             height={400} // 画像の高さ
@@ -37,9 +37,9 @@ export default function Home() {
         <div id="works">
           <Work />
         </div>
-        {/* <div id="works">
+        <div id="works">
           <Activity />
-        </div> */}
+        </div>
         <div id="contact">
           <Contact />
         </div>

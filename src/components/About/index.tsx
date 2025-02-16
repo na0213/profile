@@ -15,8 +15,8 @@ const About = () => {
             <Image
             src="/mypic.PNG"
             alt="Icon"
-            width={200}
-            height={200}
+            width={100}
+            height={100}
             />
             <div className={styles.about__prof}>石﨑 なつみ<br></br>Ishizaki Natsumi</div>
             
